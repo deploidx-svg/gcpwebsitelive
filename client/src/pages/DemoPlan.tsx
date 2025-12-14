@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { useMemo } from "react";
 import {
   Eye,
   Check,
@@ -14,6 +15,35 @@ import {
   Star
 } from "lucide-react";
 import { Link } from "wouter";
+
+// Mobile-optimized animation hook
+const useMobileOptimizedAnimation = () => {
+  const isMobile = useMemo(() => {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
+           window.innerWidth < 768;
+  }, []);
+
+  const prefersReducedMotion = useMemo(() => {
+    return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  }, []);
+
+  const shouldReduceMotion = isMobile || prefersReducedMotion;
+
+  return {
+    isMobile,
+    shouldReduceMotion,
+    // Simplified animation props for mobile
+    mobileAnimationProps: shouldReduceMotion ? {
+      initial: { opacity: 0 },
+      animate: { opacity: 1 },
+      transition: { duration: 0.3 }
+    } : {
+      initial: { opacity: 0, y: 20 },
+      animate: { opacity: 1, y: 0 },
+      transition: { duration: 0.6 }
+    }
+  };
+};
 
 const features = [
   {
