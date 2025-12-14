@@ -128,7 +128,7 @@ export default function StarterPlan() {
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg gap-2"
             >
               <a
-                href="https://wa.me/918129589051?text=I%20want%20the%20Starter%20Plan"
+                href="https://wa.me/919108350973?text=I%20want%20the%20Starter%20Plan"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -350,7 +350,7 @@ export default function StarterPlan() {
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg gap-2"
             >
               <a
-                href="https://wa.me/918129589051?text=I%20want%20the%20Starter%20Plan"
+                href="https://wa.me/919108350973?text=I%20want%20the%20Starter%20Plan"
                 target="_blank"
                 rel="noopener noreferrer"
               >
