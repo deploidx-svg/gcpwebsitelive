@@ -1,22 +1,34 @@
+import { Suspense, lazy } from "react";
 import { Switch, Route } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import AnimatedBackground from "@/components/AnimatedBackground";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import Home from "@/pages/Home";
-import Services from "@/pages/Services";
-import Pricing from "@/pages/Pricing";
-import About from "@/pages/About";
-import Contact from "@/pages/Contact";
-import DemoPlan from "@/pages/DemoPlan";
-import StarterPlan from "@/pages/StarterPlan";
-import GrowthPlan from "@/pages/GrowthPlan";
-import ProBusinessPlan from "@/pages/ProBusinessPlan";
-import EliteAIPlan from "@/pages/EliteAIPlan";
-import NotFound from "@/pages/not-found";
+
+// Loading component for Suspense fallback
+const LoadingSpinner = () => (
+  <div className="min-h-screen flex items-center justify-center bg-background">
+    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+  </div>
+);
+
+// Lazy load components for better performance
+const AnimatedBackground = lazy(() => import("@/components/AnimatedBackground"));
+const Navbar = lazy(() => import("@/components/Navbar"));
+const Footer = lazy(() => import("@/components/Footer"));
+
+// Lazy load pages with code splitting
+const Home = lazy(() => import("@/pages/Home"));
+const Services = lazy(() => import("@/pages/Services"));
+const Pricing = lazy(() => import("@/pages/Pricing"));
+const About = lazy(() => import("@/pages/About"));
+const Contact = lazy(() => import("@/pages/Contact"));
+const DemoPlan = lazy(() => import("@/pages/DemoPlan"));
+const StarterPlan = lazy(() => import("@/pages/StarterPlan"));
+const GrowthPlan = lazy(() => import("@/pages/GrowthPlan"));
+const ProBusinessPlan = lazy(() => import("@/pages/ProBusinessPlan"));
+const EliteAIPlan = lazy(() => import("@/pages/EliteAIPlan"));
+const NotFound = lazy(() => import("@/pages/not-found"));
 
 function Router() {
   return (
@@ -40,15 +52,25 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <div className="min-h-screen flex flex-col">
-          <AnimatedBackground />
-          <Navbar />
-          <main className="flex-1">
-            <Router />
-          </main>
-          <Footer />
-        </div>
-        <Toaster />
+        <Suspense fallback={<LoadingSpinner />}>
+          <div className="min-h-screen flex flex-col">
+            <Suspense fallback={null}>
+              <AnimatedBackground />
+            </Suspense>
+            <Suspense fallback={null}>
+              <Navbar />
+            </Suspense>
+            <main className="flex-1">
+              <Suspense fallback={<LoadingSpinner />}>
+                <Router />
+              </Suspense>
+            </main>
+            <Suspense fallback={null}>
+              <Footer />
+            </Suspense>
+          </div>
+          <Toaster />
+        </Suspense>
       </TooltipProvider>
     </QueryClientProvider>
   );

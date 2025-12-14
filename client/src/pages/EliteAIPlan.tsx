@@ -140,11 +140,11 @@ export default function EliteAIPlan() {
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg gap-2"
             >
               <a
-                href="https://betaai.growithcp.live/"
+                href="https://wa.me/918129589051?text=I%20want%20the%20Elite%20AI%20Plan"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Go Elite
+                💬 Go Elite
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
@@ -409,11 +409,11 @@ export default function EliteAIPlan() {
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg gap-2"
             >
               <a
-                href="https://betaai.growithcp.live/"
+                href="https://wa.me/918129589051?text=I%20want%20the%20Elite%20AI%20Plan"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Become Elite - ₹4,999/month
+                💬 Become Elite - ₹4,999/month
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>

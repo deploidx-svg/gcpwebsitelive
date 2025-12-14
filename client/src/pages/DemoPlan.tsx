@@ -116,11 +116,11 @@ export default function DemoPlan() {
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg gap-2"
             >
               <a
-                href="https://betaai.growithcp.live/"
+                href="https://wa.me/918129589051?text=I%20want%20the%20AI%20Website%20Demo"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Get My Free Demo
+                💬 Get My Free Demo
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
@@ -284,11 +284,11 @@ export default function DemoPlan() {
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg gap-2"
             >
               <a
-                href="https://betaai.growithcp.live/"
+                href="https://wa.me/918129589051?text=I%20want%20the%20AI%20Website%20Demo"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Get My Free Demo Now
+                💬 Get My Free Demo Now
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>

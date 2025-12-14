@@ -128,11 +128,11 @@ export default function StarterPlan() {
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg gap-2"
             >
               <a
-                href="https://betaai.growithcp.live/"
+                href="https://wa.me/918129589051?text=I%20want%20the%20Starter%20Plan"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Start My Website
+                💬 Start My Website
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
@@ -350,11 +350,11 @@ export default function StarterPlan() {
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg gap-2"
             >
               <a
-                href="https://betaai.growithcp.live/"
+                href="https://wa.me/918129589051?text=I%20want%20the%20Starter%20Plan"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Get Started - ₹499/month
+                💬 Get Started - ₹499/month
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>

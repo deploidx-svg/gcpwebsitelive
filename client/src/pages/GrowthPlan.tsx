@@ -130,11 +130,11 @@ export default function GrowthPlan() {
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg gap-2"
             >
               <a
-                href="https://betaai.growithcp.live/"
+                href="https://wa.me/918129589051?text=I%20want%20the%20Growth%20Plan"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Start Growing Today
+                💬 Start Growing Today
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
@@ -330,11 +330,11 @@ export default function GrowthPlan() {
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg gap-2"
             >
               <a
-                href="https://betaai.growithcp.live/"
+                href="https://wa.me/918129589051?text=I%20want%20the%20Growth%20Plan"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Start Growing - ₹1,499/month
+                💬 Start Growing - ₹1,499/month
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>

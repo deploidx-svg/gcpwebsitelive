@@ -135,11 +135,11 @@ export default function ProBusinessPlan() {
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg gap-2"
             >
               <a
-                href="https://betaai.growithcp.live/"
+                href="https://wa.me/918129589051?text=I%20want%20the%20Pro%20Business%20Plan"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Go Pro Business
+                💬 Go Pro Business
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
@@ -344,11 +344,11 @@ export default function ProBusinessPlan() {
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg gap-2"
             >
               <a
-                href="https://betaai.growithcp.live/"
+                href="https://wa.me/918129589051?text=I%20want%20the%20Pro%20Business%20Plan"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Upgrade to Pro - ₹2,999/month
+                💬 Upgrade to Pro - ₹2,999/month
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>

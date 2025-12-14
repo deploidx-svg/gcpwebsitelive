@@ -30,11 +30,52 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
+    // Performance optimizations
+    rollupOptions: {
+      output: {
+        // Split chunks for better caching
+        manualChunks: {
+          // Vendor chunk for React and related libraries
+          vendor: ['react', 'react-dom', 'react/jsx-runtime'],
+          // UI library chunk
+          ui: ['@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu', '@radix-ui/react-popover'],
+          // Animation library chunk
+          animation: ['framer-motion'],
+          // Router chunk
+          router: ['wouter'],
+          // Query library chunk
+          query: ['@tanstack/react-query'],
+        },
+      },
+    },
+    // Enable minification and compression
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true, // Remove console.logs in production
+        drop_debugger: true,
+      },
+    },
+    // Generate source maps for better debugging
+    sourcemap: false,
+    // Set chunk size warnings
+    chunkSizeWarningLimit: 600,
   },
   server: {
     fs: {
       strict: true,
       deny: ["**/.*"],
     },
+  },
+  // Optimize dependencies
+  optimizeDeps: {
+    include: [
+      'react',
+      'react-dom',
+      'wouter',
+      '@tanstack/react-query',
+      'framer-motion',
+      'lucide-react',
+    ],
   },
 });
