@@ -11,6 +11,11 @@ import Services from "@/pages/Services";
 import Pricing from "@/pages/Pricing";
 import About from "@/pages/About";
 import Contact from "@/pages/Contact";
+import DemoPlan from "@/pages/DemoPlan";
+import StarterPlan from "@/pages/StarterPlan";
+import GrowthPlan from "@/pages/GrowthPlan";
+import ProBusinessPlan from "@/pages/ProBusinessPlan";
+import EliteAIPlan from "@/pages/EliteAIPlan";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -18,6 +23,11 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/services" component={Services} />
+      <Route path="/demo-plan" component={DemoPlan} />
+      <Route path="/starter-plan" component={StarterPlan} />
+      <Route path="/growth-plan" component={GrowthPlan} />
+      <Route path="/pro-business-plan" component={ProBusinessPlan} />
+      <Route path="/elite-ai-plan" component={EliteAIPlan} />
       <Route path="/pricing" component={Pricing} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
