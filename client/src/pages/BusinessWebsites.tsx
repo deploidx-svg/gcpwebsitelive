@@ -71,7 +71,7 @@ const benefits = [
 const pricingTiers = [
   {
     name: "Starter",
-    price: "₹499",
+    price: "₹999",
     period: "/month",
     features: ["1-page website", "Basic SEO", "Contact form", "Mobile responsive"],
     recommended: false

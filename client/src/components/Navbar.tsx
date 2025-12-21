@@ -14,7 +14,7 @@ const navLinks = [
     label: "Products",
     submenu: [
       { href: "/demo-plan", label: "AI Website Demo (FREE)" },
-      { href: "/starter-plan", label: "Starter Plan - ₹499/month" },
+      { href: "/starter-plan", label: "Starter Plan - ₹999/month" },
       { href: "/growth-plan", label: "Growth Plan - ₹1,499/month" },
       { href: "/pro-business-plan", label: "Pro Business - ₹2,999/month" },
       { href: "/elite-ai-plan", label: "Elite AI Plan - ₹4,999/month" },

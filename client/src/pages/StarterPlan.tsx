@@ -114,7 +114,7 @@ export default function StarterPlan() {
 
           <div className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 rounded-lg p-6 border border-primary/20 mb-8">
             <div className="flex items-center justify-center gap-4 mb-4">
-              <span className="text-3xl font-bold text-primary">₹499</span>
+              <span className="text-3xl font-bold text-primary">₹999</span>
               <span className="text-muted-foreground">/month</span>
               <Badge className="bg-green-500 text-white">Most Affordable</Badge>
             </div>
@@ -296,7 +296,7 @@ export default function StarterPlan() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="p-6 rounded-md bg-white/[0.02] backdrop-blur-xl border border-white/[0.08]">
               <h3 className="text-lg font-semibold text-foreground mb-2">Starter Plan</h3>
-              <div className="text-2xl font-bold text-primary mb-4">₹499/month</div>
+              <div className="text-2xl font-bold text-primary mb-4">₹999/month</div>
               <ul className="space-y-2 text-sm">
                 <li>• 1-page website</li>
                 <li>• Basic SEO</li>
@@ -354,7 +354,7 @@ export default function StarterPlan() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                💬 Get Started - ₹499/month
+                💬 Get Started - ₹999/month
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>

@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 const demoPlan = {
   name: "AI Website Demo",
   price: "FREE",
-  originalPrice: "₹149",
+  originalPrice: "₹499",
   subtitle: "(Limited Time Offer)",
   description: "Get a professional AI-generated website demo within 24 hours",
   features: [
@@ -24,7 +24,7 @@ const demoPlan = {
 const subscriptionPlans = [
   {
     name: "Starter Plan",
-    price: "₹499",
+    price: "₹999",
     period: "/month",
     subtitle: "Best for individuals & small services",
     features: [
@@ -149,7 +149,7 @@ export default function Pricing() {
                 <h3 className="text-xl font-semibold text-foreground mb-1">{demoPlan.name}</h3>
                 <p className="text-sm text-primary font-medium">{demoPlan.subtitle}</p>
                 <div className="flex items-center justify-center gap-2 my-4">
-                  <span className="text-2xl font-bold text-muted-foreground line-through">₹149</span>
+                  <span className="text-2xl font-bold text-muted-foreground line-through">₹499</span>
                   <span className="text-4xl font-bold text-primary">{demoPlan.price}</span>
                 </div>
                 <p className="text-muted-foreground text-sm">{demoPlan.description}</p>
@@ -266,7 +266,7 @@ export default function Pricing() {
                   asChild
                 >
                   <a
-                    href="https://betaai.growithcp.live/"
+                    href={`https://wa.me/919108350973?text=I%20want%20to%20sign%20up%20for%20the%20${plan.name.replace(/\s+/g, '%20')}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     data-testid={`button-pricing-${plan.name.toLowerCase().replace(/\s+/g, '-')}`}

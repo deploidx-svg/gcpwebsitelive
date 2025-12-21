@@ -132,11 +132,11 @@ export default function DemoPlan() {
 
           <div className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 rounded-lg p-6 border border-primary/20 mb-8">
             <div className="flex items-center justify-center gap-4 mb-4">
-              <span className="text-2xl font-bold text-muted-foreground line-through">₹149</span>
-              <span className="text-4xl font-bold text-primary">FREE</span>
+            <span className="text-2xl font-bold text-muted-foreground line-through">₹499</span>
+            <span className="text-4xl font-bold text-primary">FREE</span>
               <Badge className="bg-green-500 text-white">Limited Time</Badge>
             </div>
-            <p className="text-muted-foreground">Normally ₹149, now completely free for a limited time!</p>
+            <p className="text-muted-foreground">Normally ₹499, now completely free for a limited time!</p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -322,7 +322,7 @@ export default function DemoPlan() {
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
-            <p className="text-sm text-muted-foreground">Normally ₹149 • Now FREE</p>
+            <p className="text-sm text-muted-foreground">Normally ₹499 • Now FREE</p>
           </div>
         </motion.div>
       </div>
