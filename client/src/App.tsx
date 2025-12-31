@@ -29,6 +29,7 @@ const Footer = lazy(() => import("@/components/Footer"));
 // Lazy load pages with code splitting
 const Home = lazy(() => import("@/pages/Home"));
 const Services = lazy(() => import("@/pages/Services"));
+const Portfolio = lazy(() => import("@/pages/Portfolio"));
 const BusinessWebsites = lazy(() => import("@/pages/BusinessWebsites"));
 const PortfolioWebsites = lazy(() => import("@/pages/PortfolioWebsites"));
 const EcommerceWebsites = lazy(() => import("@/pages/EcommerceWebsites"));
@@ -50,6 +51,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/services" component={Services} />
+      <Route path="/portfolio" component={Portfolio} />
       <Route path="/services/business-websites" component={BusinessWebsites} />
       <Route path="/services/portfolio-websites" component={PortfolioWebsites} />
       <Route path="/services/ecommerce-websites" component={EcommerceWebsites} />

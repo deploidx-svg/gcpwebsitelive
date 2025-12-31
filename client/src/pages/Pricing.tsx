@@ -170,7 +170,7 @@ export default function Pricing() {
 
               <Button className="w-full bg-primary hover:bg-primary/90" asChild>
                 <a
-                  href="https://betaai.growithcp.live/"
+                  href="https://clients.growithcp.live/order/product?pid=d5308768-251d-4859-d56c-747e390921e6"
                   target="_blank"
                   rel="noopener noreferrer"
                   data-testid="button-pricing-demo"

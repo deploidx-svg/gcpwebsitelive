@@ -20,6 +20,7 @@ const navLinks = [
       { href: "/elite-ai-plan", label: "Elite AI Plan - ₹4,999/month" },
     ]
   },
+  { href: "/portfolio", label: "Portfolio" },
   { href: "/pricing", label: "Pricing" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
@@ -159,7 +160,7 @@ export default function Navbar() {
                 className="bg-primary/90 border border-primary hover:bg-primary"
               >
                 <a
-                  href="https://betaai.growithcp.live/"
+                  href="https://clients.growithcp.live/order/product?pid=d5308768-251d-4859-d56c-747e390921e6"
                   target="_blank"
                   rel="noopener noreferrer"
                   data-testid="button-cta-navbar"
@@ -239,13 +240,13 @@ export default function Navbar() {
                   </Link>
                 );
               })}
-              <Button 
+              <Button
                 asChild
                 className="w-full mt-4 bg-primary/90 border border-primary hover:bg-primary"
               >
-                <a 
-                  href="https://betaai.growithcp.live/" 
-                  target="_blank" 
+                <a
+                  href="https://clients.growithcp.live/order/product?pid=d5308768-251d-4859-d56c-747e390921e6"
+                  target="_blank"
                   rel="noopener noreferrer"
                   data-testid="button-cta-mobile"
                 >

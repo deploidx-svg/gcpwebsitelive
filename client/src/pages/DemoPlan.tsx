@@ -145,7 +145,7 @@ export default function DemoPlan() {
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg gap-2"
             >
               <a
-                href="https://wa.me/919108350973?text=I%20want%20the%20AI%20Website%20Demo"
+                href="https://clients.growithcp.live/order/product?pid=d5308768-251d-4859-d56c-747e390921e6"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -313,7 +313,7 @@ export default function DemoPlan() {
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg gap-2"
             >
               <a
-                href="https://wa.me/919108350973?text=I%20want%20the%20AI%20Website%20Demo"
+                href="https://clients.growithcp.live/order/product?pid=d5308768-251d-4859-d56c-747e390921e6"
                 target="_blank"
                 rel="noopener noreferrer"
               >

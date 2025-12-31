@@ -32,14 +32,14 @@ export default function CTASection() {
               Talk to our AI consultant for instant guidance, clear pricing, and no pressure. Get started on your same-day website today.
             </p>
             
-            <Button 
+            <Button
               size="lg"
               asChild
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg gap-2"
             >
-              <a 
-                href="https://betaai.growithcp.live/" 
-                target="_blank" 
+              <a
+                href="https://clients.growithcp.live/order/product?pid=d5308768-251d-4859-d56c-747e390921e6"
+                target="_blank"
                 rel="noopener noreferrer"
                 data-testid="button-cta-section"
               >
