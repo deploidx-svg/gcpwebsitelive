@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 const demoPlan = {
   name: "AI Website Demo",
-  price: "FREE",
+  price: "₹149",
   originalPrice: "₹499",
   subtitle: "(Limited Time Offer)",
   description: "Get a professional AI-generated website demo within 24 hours",
@@ -46,7 +46,7 @@ const subscriptionPlans = [
   },
   {
     name: "Growth Plan",
-    price: "₹1,499",
+    price: "₹1,999",
     period: "/month",
     subtitle: "Best for startups & professionals",
     features: [
@@ -149,7 +149,6 @@ export default function Pricing() {
                 <h3 className="text-xl font-semibold text-foreground mb-1">{demoPlan.name}</h3>
                 <p className="text-sm text-primary font-medium">{demoPlan.subtitle}</p>
                 <div className="flex items-center justify-center gap-2 my-4">
-                  <span className="text-2xl font-bold text-muted-foreground line-through">₹499</span>
                   <span className="text-4xl font-bold text-primary">{demoPlan.price}</span>
                 </div>
                 <p className="text-muted-foreground text-sm">{demoPlan.description}</p>
@@ -295,7 +294,7 @@ export default function Pricing() {
             </ul>
             <ul className="space-y-2">
               <li>• Custom features quoted separately</li>
-              <li>• Free demo available (limited time offer)</li>
+              <li>• Demo available for ₹149 (limited time offer)</li>
             </ul>
           </div>
         </motion.div>

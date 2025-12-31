@@ -13,9 +13,9 @@ const navLinks = [
     href: "#",
     label: "Products",
     submenu: [
-      { href: "/demo-plan", label: "AI Website Demo (FREE)" },
+      { href: "/demo-plan", label: "AI Website Demo - ₹149" },
       { href: "/starter-plan", label: "Starter Plan - ₹999/month" },
-      { href: "/growth-plan", label: "Growth Plan - ₹1,499/month" },
+      { href: "/growth-plan", label: "Growth Plan - ₹1,999/month" },
       { href: "/pro-business-plan", label: "Pro Business - ₹2,999/month" },
       { href: "/elite-ai-plan", label: "Elite AI Plan - ₹4,999/month" },
     ]
@@ -44,7 +44,7 @@ export default function Navbar() {
               <img
                 src={logoImage}
                 alt="GrowithCP"
-                className="h-10 w-auto"
+                className="h-32 w-auto"
                 loading="eager"
                 decoding="async"
                 data-testid="img-logo"
@@ -125,14 +125,42 @@ export default function Navbar() {
               })}
             </div>
 
-            <div className="hidden md:block">
-              <Button 
+            <div className="hidden md:flex items-center gap-3">
+              <Button
+                asChild
+                variant="ghost"
+                className="text-muted-foreground hover:text-foreground hover:bg-white/5"
+              >
+                <a
+                  href="https://clients.growithcp.live/login"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="button-login-navbar"
+                >
+                  Login
+                </a>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground"
+              >
+                <a
+                  href="https://clients.growithcp.live/auth/register"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="button-get-started-navbar"
+                >
+                  Get Started
+                </a>
+              </Button>
+              <Button
                 asChild
                 className="bg-primary/90 border border-primary hover:bg-primary"
               >
-                <a 
-                  href="https://betaai.growithcp.live/" 
-                  target="_blank" 
+                <a
+                  href="https://betaai.growithcp.live/"
+                  target="_blank"
                   rel="noopener noreferrer"
                   data-testid="button-cta-navbar"
                 >

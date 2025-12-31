@@ -309,7 +309,7 @@ export default function StarterPlan() {
                 Recommended
               </Badge>
               <h3 className="text-lg font-semibold text-foreground mb-2">Growth Plan</h3>
-              <div className="text-2xl font-bold text-primary mb-4">₹1,499/month</div>
+              <div className="text-2xl font-bold text-primary mb-4">₹1,999/month</div>
               <ul className="space-y-2 text-sm">
                 <li>• Up to 5 pages</li>
                 <li>• Advanced SEO</li>

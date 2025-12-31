@@ -78,7 +78,7 @@ const pricingTiers = [
   },
   {
     name: "Growth",
-    price: "₹1,499",
+    price: "₹1,999",
     period: "/month",
     features: ["Up to 5 pages", "Advanced SEO", "Analytics", "Priority support"],
     recommended: true

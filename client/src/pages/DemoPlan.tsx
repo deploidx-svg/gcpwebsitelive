@@ -127,16 +127,15 @@ export default function DemoPlan() {
           </h1>
           <p className="text-muted-foreground max-w-3xl mx-auto text-lg mb-8">
             Get a professional AI-generated website demo in just 24 hours. Experience the quality of our work
-            with a fully functional preview of what your website will look like. Completely free - no strings attached.
+            with a fully functional preview of what your website will look like.
           </p>
 
           <div className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 rounded-lg p-6 border border-primary/20 mb-8">
             <div className="flex items-center justify-center gap-4 mb-4">
-            <span className="text-2xl font-bold text-muted-foreground line-through">₹499</span>
-            <span className="text-4xl font-bold text-primary">FREE</span>
+            <span className="text-4xl font-bold text-primary">₹149</span>
               <Badge className="bg-green-500 text-white">Limited Time</Badge>
             </div>
-            <p className="text-muted-foreground">Normally ₹499, now completely free for a limited time!</p>
+            <p className="text-muted-foreground">Professional AI-generated website demo with 24-hour delivery</p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -150,7 +149,7 @@ export default function DemoPlan() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                💬 Get My Free Demo
+                💬 Get My Demo Now
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
@@ -201,7 +200,7 @@ export default function DemoPlan() {
           transition={{ duration: 0.6, delay: 0.3 }}
         >
           <h2 className="text-3xl font-bold text-center text-foreground mb-12">
-            Everything You Get (FREE)
+            Everything You Get
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 rounded-md bg-white/[0.02] backdrop-blur-xl border border-white/[0.08]">
@@ -304,8 +303,8 @@ export default function DemoPlan() {
             Ready to See Your Website in Action?
           </h2>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Get your professional AI-generated website demo completely free. No credit card required.
-            Experience the quality of our work before making any commitment.
+            Get your professional AI-generated website demo for just ₹149. Experience the quality of our work
+            before making any commitment.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button
@@ -318,11 +317,11 @@ export default function DemoPlan() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                💬 Get My Free Demo Now
+                💬 Get My Demo Now
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
-            <p className="text-sm text-muted-foreground">Normally ₹499 • Now FREE</p>
+            <p className="text-sm text-muted-foreground">Professional AI-generated website demo • ₹149</p>
           </div>
         </motion.div>
       </div>
