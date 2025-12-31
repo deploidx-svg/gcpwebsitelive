@@ -29,6 +29,11 @@ const Footer = lazy(() => import("@/components/Footer"));
 // Lazy load pages with code splitting
 const Home = lazy(() => import("@/pages/Home"));
 const Services = lazy(() => import("@/pages/Services"));
+const BusinessWebsites = lazy(() => import("@/pages/BusinessWebsites"));
+const PortfolioWebsites = lazy(() => import("@/pages/PortfolioWebsites"));
+const EcommerceWebsites = lazy(() => import("@/pages/EcommerceWebsites"));
+const LandingPages = lazy(() => import("@/pages/LandingPages"));
+const Hosting = lazy(() => import("@/pages/Hosting"));
 const Pricing = lazy(() => import("@/pages/Pricing"));
 const About = lazy(() => import("@/pages/About"));
 const Contact = lazy(() => import("@/pages/Contact"));
@@ -37,6 +42,7 @@ const StarterPlan = lazy(() => import("@/pages/StarterPlan"));
 const GrowthPlan = lazy(() => import("@/pages/GrowthPlan"));
 const ProBusinessPlan = lazy(() => import("@/pages/ProBusinessPlan"));
 const EliteAIPlan = lazy(() => import("@/pages/EliteAIPlan"));
+const ChatDemo = lazy(() => import("@/pages/ChatDemo"));
 const NotFound = lazy(() => import("@/pages/not-found"));
 
 function Router() {
@@ -44,11 +50,17 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/services" component={Services} />
+      <Route path="/services/business-websites" component={BusinessWebsites} />
+      <Route path="/services/portfolio-websites" component={PortfolioWebsites} />
+      <Route path="/services/ecommerce-websites" component={EcommerceWebsites} />
+      <Route path="/services/landing-pages" component={LandingPages} />
+      <Route path="/services/hosting" component={Hosting} />
       <Route path="/demo-plan" component={DemoPlan} />
       <Route path="/starter-plan" component={StarterPlan} />
       <Route path="/growth-plan" component={GrowthPlan} />
       <Route path="/pro-business-plan" component={ProBusinessPlan} />
       <Route path="/elite-ai-plan" component={EliteAIPlan} />
+      <Route path="/chat-demo" component={ChatDemo} />
       <Route path="/pricing" component={Pricing} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />

@@ -7,30 +7,35 @@ const services = [
   {
     icon: Briefcase,
     title: "Business Websites",
+    slug: "business-websites",
     description: "Professional websites that establish credibility and convert visitors into customers. Perfect for startups, agencies, and enterprises.",
     features: ["Custom design", "SEO optimized", "Mobile responsive", "Contact forms"],
   },
   {
     icon: Globe,
     title: "Portfolio Websites",
+    slug: "portfolio-websites",
     description: "Showcase your work beautifully with stunning portfolio sites that highlight your skills and attract new opportunities.",
     features: ["Gallery layouts", "Project showcases", "Bio sections", "Social links"],
   },
   {
     icon: ShoppingCart,
     title: "E-Commerce Websites",
+    slug: "ecommerce-websites",
     description: "Fully functional online stores with secure payments, inventory management, and seamless shopping experiences.",
     features: ["Product catalogs", "Secure checkout", "Inventory tracking", "Order management"],
   },
   {
     icon: Layout,
     title: "Landing Pages",
+    slug: "landing-pages",
     description: "High-converting landing pages designed to capture leads and drive specific actions. Perfect for campaigns and launches.",
     features: ["A/B testing ready", "Lead capture", "Fast loading", "Analytics integration"],
   },
   {
     icon: Server,
     title: "Hosting & Deployment",
+    slug: "hosting",
     description: "Reliable hosting solutions with automatic deployments, SSL certificates, and 99.9% uptime guarantee.",
     features: ["Auto scaling", "SSL included", "Daily backups", "24/7 monitoring"],
   },
@@ -98,19 +103,17 @@ export default function Services() {
                 ))}
               </div>
               
-              <Button 
-                variant="ghost" 
+              <Button
+                variant="ghost"
                 size="sm"
                 asChild
                 className="text-primary hover:text-primary/80 p-0 h-auto"
               >
-                <a 
-                  href="https://betaai.growithcp.live/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  data-testid={`button-service-${service.title.toLowerCase().replace(/\s+/g, '-')}`}
+                <a
+                  href={`/services/${service.slug}`}
+                  data-testid={`button-service-${service.slug}`}
                 >
-                  Get Started <ArrowRight className="w-4 h-4 ml-1" />
+                  Learn More <ArrowRight className="w-4 h-4 ml-1" />
                 </a>
               </Button>
             </motion.div>
