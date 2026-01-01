@@ -7,80 +7,66 @@ import stack1Image from "/stack1.webp";
 import stack2Image from "/stack2.webp";
 
 function StackedImages() {
+  const images = [
+    { src: stack1Image, alt: "AI Chat Interface" },
+    { src: stack2Image, alt: "DeFi Platform" },
+    { src: herHealingHubImage, alt: "Her Healing Hub" },
+  ];
+
   return (
-    <div className="relative w-full h-[300px] sm:h-[350px] md:h-[400px] flex items-center justify-center">
-      <motion.div
-        className="absolute w-[200px] sm:w-[240px] md:w-[280px] h-[140px] sm:h-[160px] md:h-[180px] rounded-xl overflow-hidden shadow-2xl border border-white/10"
-        style={{ left: '5%', top: '15%', zIndex: 1 }}
-        animate={{
-          y: [0, -8, 0],
-          rotate: [-8, -10, -8],
-        }}
-        transition={{
-          duration: 5,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-        initial={{ opacity: 0, x: -50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-      >
-        <img
-          src={stack1Image}
-          alt="AI Chat Interface - Portfolio showcase"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-      </motion.div>
-
-      <motion.div
-        className="absolute w-[220px] sm:w-[280px] md:w-[340px] h-[150px] sm:h-[180px] md:h-[220px] rounded-xl overflow-hidden shadow-2xl border border-white/10"
-        style={{ zIndex: 3 }}
-        animate={{
-          y: [0, -12, 0],
-          scale: [1, 1.02, 1],
-        }}
-        transition={{
-          duration: 4,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-      >
-        <img
-          src={herHealingHubImage}
-          alt="Her Healing Hub - Portfolio showcase"
-          className="w-full h-full object-cover object-left-top"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-      </motion.div>
-
-      <motion.div
-        className="absolute w-[180px] sm:w-[220px] md:w-[260px] h-[130px] sm:h-[150px] md:h-[170px] rounded-xl overflow-hidden shadow-2xl border border-white/10"
-        style={{ right: '5%', top: '20%', zIndex: 2 }}
-        animate={{
-          y: [0, -10, 0],
-          rotate: [6, 8, 6],
-        }}
-        transition={{
-          duration: 6,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 0.5,
-        }}
-        initial={{ opacity: 0, x: 50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-      >
-        <img
-          src={stack2Image}
-          alt="DeFi Platform - Portfolio showcase"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-      </motion.div>
+    <div className="relative w-full h-[320px] sm:h-[380px] md:h-[420px] flex items-center justify-center">
+      {images.map((image, index) => (
+        <motion.div
+          key={index}
+          className="absolute w-[240px] sm:w-[300px] md:w-[360px] h-[160px] sm:h-[200px] md:h-[240px] rounded-xl overflow-hidden shadow-2xl border border-white/10"
+          style={{
+            zIndex: images.length - index,
+            transformOrigin: 'center bottom',
+          }}
+          initial={{ 
+            opacity: 0, 
+            y: 50,
+            scale: 0.9,
+          }}
+          animate={{ 
+            opacity: 1,
+            y: index * -20,
+            x: index * 15,
+            scale: 1 - index * 0.04,
+            rotate: index * -4,
+          }}
+          transition={{
+            duration: 0.8,
+            delay: index * 0.2,
+            ease: "easeOut",
+          }}
+          whileHover={{
+            y: index * -20 - 8,
+            scale: 1 - index * 0.04 + 0.02,
+            transition: { duration: 0.3 }
+          }}
+        >
+          <motion.div
+            className="w-full h-full"
+            animate={{
+              y: [0, -4, 0],
+            }}
+            transition={{
+              duration: 3 + index * 0.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: index * 0.3,
+            }}
+          >
+            <img
+              src={image.src}
+              alt={image.alt}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+          </motion.div>
+        </motion.div>
+      ))}
     </div>
   );
 }
