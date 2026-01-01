@@ -37,27 +37,33 @@ function StackedImages() {
                 key={image.alt}
                 className="absolute inset-0 rounded-xl overflow-hidden shadow-2xl border border-white/10"
                 initial={{ 
-                  scale: 0.92,
+                  scale: 0.88,
                   opacity: 0,
-                  z: -100,
+                  x: 40,
+                  y: 30,
+                  rotate: 6,
                 }}
                 animate={{ 
-                  scale: position === 0 ? 1 : 0.96 - position * 0.02,
-                  opacity: position === 0 ? 1 : position === 1 ? 0.4 : 0.15,
+                  scale: 1 - position * 0.06,
+                  opacity: 1 - position * 0.25,
                   zIndex: images.length - position,
-                  y: position * 12,
+                  x: position * 25,
+                  y: position * 18,
+                  rotate: position * 4,
                 }}
                 exit={{ 
-                  scale: 0.9,
+                  scale: 0.85,
                   opacity: 0,
-                  y: 30,
+                  x: -30,
+                  y: -20,
+                  rotate: -8,
                 }}
                 transition={{
-                  duration: 0.7,
+                  duration: 0.8,
                   ease: [0.4, 0, 0.2, 1],
                 }}
                 style={{
-                  transformOrigin: 'center center',
+                  transformOrigin: 'bottom left',
                 }}
               >
                 <img
@@ -66,11 +72,11 @@ function StackedImages() {
                   className="w-full h-full object-cover"
                 />
                 <motion.div 
-                  className="absolute inset-0 bg-black"
+                  className="absolute inset-0 bg-black/20"
                   animate={{
-                    opacity: position === 0 ? 0 : 0.3 + position * 0.2,
+                    opacity: position === 0 ? 0 : 0.15 + position * 0.15,
                   }}
-                  transition={{ duration: 0.7 }}
+                  transition={{ duration: 0.8 }}
                 />
               </motion.div>
             );
