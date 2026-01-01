@@ -1,5 +1,6 @@
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Link } from "wouter";
 import herHealingHubImage from "/herhealinghub_screenshot.png";
@@ -13,60 +14,69 @@ function StackedImages() {
     { src: herHealingHubImage, alt: "Her Healing Hub" },
   ];
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, 3500);
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   return (
     <div className="relative w-full h-[320px] sm:h-[380px] md:h-[420px] flex items-center justify-center">
-      {images.map((image, index) => (
-        <motion.div
-          key={index}
-          className="absolute w-[240px] sm:w-[300px] md:w-[360px] h-[160px] sm:h-[200px] md:h-[240px] rounded-xl overflow-hidden shadow-2xl border border-white/10"
-          style={{
-            zIndex: images.length - index,
-            transformOrigin: 'center bottom',
-          }}
-          initial={{ 
-            opacity: 0, 
-            y: 50,
-            scale: 0.9,
-          }}
-          animate={{ 
-            opacity: 1,
-            y: index * -20,
-            x: index * 15,
-            scale: 1 - index * 0.04,
-            rotate: index * -4,
-          }}
-          transition={{
-            duration: 0.8,
-            delay: index * 0.2,
-            ease: "easeOut",
-          }}
-          whileHover={{
-            y: index * -20 - 8,
-            scale: 1 - index * 0.04 + 0.02,
-            transition: { duration: 0.3 }
-          }}
-        >
-          <motion.div
-            className="w-full h-full"
-            animate={{
-              y: [0, -4, 0],
-            }}
-            transition={{
-              duration: 3 + index * 0.5,
-              repeat: Infinity,
-              ease: "easeInOut",
-              delay: index * 0.3,
-            }}
-          >
-            <img
-              src={image.src}
-              alt={image.alt}
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-          </motion.div>
-        </motion.div>
-      ))}
+      <div className="relative w-[260px] sm:w-[320px] md:w-[380px] h-[180px] sm:h-[220px] md:h-[260px]">
+        <AnimatePresence mode="popLayout">
+          {images.map((image, index) => {
+            const position = (index - currentIndex + images.length) % images.length;
+            
+            if (position > 2) return null;
+
+            return (
+              <motion.div
+                key={image.alt}
+                className="absolute inset-0 rounded-xl overflow-hidden shadow-2xl border border-white/10"
+                initial={{ 
+                  scale: 0.92,
+                  opacity: 0,
+                  z: -100,
+                }}
+                animate={{ 
+                  scale: position === 0 ? 1 : 0.96 - position * 0.02,
+                  opacity: position === 0 ? 1 : position === 1 ? 0.4 : 0.15,
+                  zIndex: images.length - position,
+                  y: position * 12,
+                }}
+                exit={{ 
+                  scale: 0.9,
+                  opacity: 0,
+                  y: 30,
+                }}
+                transition={{
+                  duration: 0.7,
+                  ease: [0.4, 0, 0.2, 1],
+                }}
+                style={{
+                  transformOrigin: 'center center',
+                }}
+              >
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-full object-cover"
+                />
+                <motion.div 
+                  className="absolute inset-0 bg-black"
+                  animate={{
+                    opacity: position === 0 ? 0 : 0.3 + position * 0.2,
+                  }}
+                  transition={{ duration: 0.7 }}
+                />
+              </motion.div>
+            );
+          })}
+        </AnimatePresence>
+      </div>
     </div>
   );
 }
