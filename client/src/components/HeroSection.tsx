@@ -3,12 +3,14 @@ import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Link } from "wouter";
 import herHealingHubImage from "/herhealinghub_screenshot.png";
+import stack1Image from "/stack1.webp";
+import stack2Image from "/stack2.webp";
 
 function StackedImages() {
   return (
     <div className="relative w-full h-[300px] sm:h-[350px] md:h-[400px] flex items-center justify-center">
       <motion.div
-        className="absolute w-[200px] sm:w-[240px] md:w-[280px] h-[140px] sm:h-[160px] md:h-[180px] rounded-xl overflow-hidden shadow-2xl border border-white/10 bg-gradient-to-br from-primary/20 to-primary/5"
+        className="absolute w-[200px] sm:w-[240px] md:w-[280px] h-[140px] sm:h-[160px] md:h-[180px] rounded-xl overflow-hidden shadow-2xl border border-white/10"
         style={{ left: '5%', top: '15%', zIndex: 1 }}
         animate={{
           y: [0, -8, 0],
@@ -23,13 +25,12 @@ function StackedImages() {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
       >
-        <div className="w-full h-full flex items-center justify-center">
-          <div className="text-center">
-            <div className="w-8 h-8 bg-primary/30 rounded-lg mx-auto mb-2" />
-            <div className="w-16 h-2 bg-white/20 rounded mx-auto mb-1" />
-            <div className="w-12 h-2 bg-white/10 rounded mx-auto" />
-          </div>
-        </div>
+        <img
+          src={stack1Image}
+          alt="AI Chat Interface - Portfolio showcase"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
       </motion.div>
 
       <motion.div
@@ -57,7 +58,7 @@ function StackedImages() {
       </motion.div>
 
       <motion.div
-        className="absolute w-[180px] sm:w-[220px] md:w-[260px] h-[130px] sm:h-[150px] md:h-[170px] rounded-xl overflow-hidden shadow-2xl border border-white/10 bg-gradient-to-br from-red-500/20 to-primary/10"
+        className="absolute w-[180px] sm:w-[220px] md:w-[260px] h-[130px] sm:h-[150px] md:h-[170px] rounded-xl overflow-hidden shadow-2xl border border-white/10"
         style={{ right: '5%', top: '20%', zIndex: 2 }}
         animate={{
           y: [0, -10, 0],
@@ -73,69 +74,12 @@ function StackedImages() {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
       >
-        <div className="w-full h-full flex items-center justify-center">
-          <div className="text-center">
-            <div className="w-10 h-10 bg-primary/40 rounded-full mx-auto mb-2" />
-            <div className="w-14 h-2 bg-white/20 rounded mx-auto mb-1" />
-            <div className="w-10 h-2 bg-white/10 rounded mx-auto" />
-          </div>
-        </div>
-      </motion.div>
-
-      <motion.div
-        className="absolute w-[160px] sm:w-[180px] md:w-[200px] h-[110px] sm:h-[120px] md:h-[130px] rounded-xl overflow-hidden shadow-xl border border-white/10 bg-gradient-to-br from-white/5 to-white/[0.02]"
-        style={{ left: '15%', bottom: '10%', zIndex: 1 }}
-        animate={{
-          y: [0, -6, 0],
-          rotate: [4, 2, 4],
-        }}
-        transition={{
-          duration: 7,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 1,
-        }}
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-      >
-        <div className="w-full h-full flex items-center justify-center">
-          <div className="grid grid-cols-2 gap-2 p-4">
-            <div className="w-6 h-6 bg-primary/20 rounded" />
-            <div className="w-6 h-6 bg-white/10 rounded" />
-            <div className="w-6 h-6 bg-white/10 rounded" />
-            <div className="w-6 h-6 bg-primary/20 rounded" />
-          </div>
-        </div>
-      </motion.div>
-
-      <motion.div
-        className="absolute w-[150px] sm:w-[170px] md:w-[190px] h-[100px] sm:h-[110px] md:h-[120px] rounded-xl overflow-hidden shadow-xl border border-white/10 bg-gradient-to-br from-primary/10 to-transparent"
-        style={{ right: '10%', bottom: '15%', zIndex: 1 }}
-        animate={{
-          y: [0, -8, 0],
-          rotate: [-4, -6, -4],
-        }}
-        transition={{
-          duration: 5.5,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 0.8,
-        }}
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-      >
-        <div className="w-full h-full flex items-center justify-center">
-          <div className="text-center">
-            <div className="flex gap-1 justify-center mb-2">
-              <div className="w-3 h-3 bg-primary/40 rounded-full" />
-              <div className="w-3 h-3 bg-white/20 rounded-full" />
-              <div className="w-3 h-3 bg-white/10 rounded-full" />
-            </div>
-            <div className="w-12 h-1.5 bg-white/15 rounded mx-auto" />
-          </div>
-        </div>
+        <img
+          src={stack2Image}
+          alt="DeFi Platform - Portfolio showcase"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
       </motion.div>
     </div>
   );
