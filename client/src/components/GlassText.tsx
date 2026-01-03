@@ -12,7 +12,7 @@ export function GlassText({
   text,
   className = "",
   delay = 0,
-  charDelay = 0.03,
+  charDelay = 0.05,
   mode = "word",
 }: GlassTextProps) {
   const items = mode === "char" ? text.split("") : text.split(" ");
@@ -36,7 +36,7 @@ export function GlassText({
       opacity: 1,
       filter: "blur(0px)",
       transition: {
-        duration: 0.2,
+        duration: 0.35,
         ease: "easeOut",
       },
     },
