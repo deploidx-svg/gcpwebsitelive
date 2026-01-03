@@ -88,6 +88,8 @@ function StackedImages() {
                     src={image.src}
                     alt={image.alt}
                     className="w-full h-full object-cover object-top"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <motion.div 

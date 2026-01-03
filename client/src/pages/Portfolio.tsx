@@ -156,6 +156,7 @@ export default function Portfolio() {
                     alt="Her Healing Hub - Wellness Platform Screenshot"
                     className="w-full h-full object-cover object-left"
                     loading="lazy"
+                    decoding="async"
                   />
                 </div>
               </div>

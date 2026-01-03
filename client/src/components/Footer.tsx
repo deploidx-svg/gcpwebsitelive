@@ -27,6 +27,8 @@ export default function Footer() {
                 src={logoImage} 
                 alt="GrowithCP" 
                 className="h-10 w-auto mb-4"
+                loading="lazy"
+                decoding="async"
                 data-testid="img-footer-logo"
               />
             </Link>
