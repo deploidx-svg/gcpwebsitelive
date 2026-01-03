@@ -35,7 +35,7 @@ function StackedImages() {
             return (
               <motion.div
                 key={image.alt}
-                className="absolute inset-0 rounded-xl overflow-hidden shadow-2xl border border-white/10"
+                className="absolute inset-0 rounded-xl overflow-hidden shadow-2xl border border-white/10 bg-[#1a1a1a]"
                 initial={{ 
                   scale: 0.88,
                   opacity: 0,
@@ -66,13 +66,27 @@ function StackedImages() {
                   transformOrigin: 'bottom left',
                 }}
               >
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-full object-cover"
-                />
+                <div className="h-6 sm:h-7 bg-[#2a2a2a] flex items-center px-2 sm:px-3 gap-1.5 sm:gap-2 border-b border-white/5">
+                  <div className="flex gap-1 sm:gap-1.5">
+                    <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#ff5f57]" />
+                    <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#febc2e]" />
+                    <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#28c840]" />
+                  </div>
+                  <div className="flex-1 flex justify-center">
+                    <div className="bg-[#1a1a1a] rounded px-2 sm:px-3 py-0.5 text-[8px] sm:text-[10px] text-white/40 max-w-[120px] sm:max-w-[160px] truncate">
+                      growithcp.com
+                    </div>
+                  </div>
+                </div>
+                <div className="h-[calc(100%-1.5rem)] sm:h-[calc(100%-1.75rem)]">
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
                 <motion.div 
-                  className="absolute inset-0 bg-black/20"
+                  className="absolute inset-0 bg-black/20 pointer-events-none"
                   animate={{
                     opacity: position === 0 ? 0 : 0.15 + position * 0.15,
                   }}
