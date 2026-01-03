@@ -45,6 +45,14 @@ Preferred communication style: Simple, everyday language.
 - Mobile-specific animation reduction for better performance
 - Chunk splitting for vendor, UI, animation, router, and query libraries
 
+### Glass Effects & Animations
+- **GlassText Component**: `client/src/components/GlassText.tsx` - Blur-reveal typing animation for headings
+  - Props: `text`, `delay`, `charDelay`, `mode` ("word" or "char")
+  - Usage: `<GlassText text="Hello World" delay={0.2} charDelay={0.05} mode="word" />`
+- **Glass Card Pattern**: `bg-white/[0.03] backdrop-blur-xl border border-white/[0.08] shadow-[0_8px_32px_rgba(0,0,0,0.2)]`
+- **Hover Effects**: `hover:shadow-[0_12px_40px_rgba(0,0,0,0.3)]` with `whileHover={{ y: -4 }}`
+- **CSS Animations**: shimmer, pulse-glow, float, fade-in-up, blur-reveal (defined in index.css)
+
 ## External Dependencies
 
 ### Database

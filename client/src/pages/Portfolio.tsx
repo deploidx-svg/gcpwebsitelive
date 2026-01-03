@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Eye, Star, Calendar, Users } from "lucide-react";
+import { GlassText } from "@/components/GlassText";
 import herHealingHubImage from "/herhealinghub_screenshot.png";
 
 const projects = [
@@ -100,7 +101,10 @@ export default function Portfolio() {
             <span className="text-sm text-primary font-medium">Our Work</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            Portfolio of <span className="text-primary">Success Stories</span>
+            <GlassText text="Portfolio of" delay={0.1} charDelay={0.05} mode="word" />{" "}
+            <span className="text-primary">
+              <GlassText text="Success Stories" delay={0.4} charDelay={0.06} mode="word" />
+            </span>
           </h1>
           <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
             Explore our collection of professionally crafted websites and digital solutions.

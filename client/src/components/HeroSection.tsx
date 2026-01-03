@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Link } from "wouter";
+import { GlassText } from "@/components/GlassText";
 import stack1Image from "/stack1.png";
 import stack2Image from "/stack2.png";
 import stack3Image from "/stack3.png";
@@ -122,18 +123,13 @@ export default function HeroSection() {
               </div>
             </motion.div>
 
-            <motion.h1
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-[1.1] tracking-tight"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-            >
-              AI-Powered Websites.
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-[1.1] tracking-tight">
+              <GlassText text="AI-Powered Websites." delay={0.2} charDelay={0.04} mode="word" />
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-red-400 to-primary">
-                Delivered the Same Day.
+                <GlassText text="Delivered the Same Day." delay={0.6} charDelay={0.05} mode="word" />
               </span>
-            </motion.h1>
+            </h1>
 
             <motion.div 
               className="lg:hidden flex flex-col items-center gap-6"

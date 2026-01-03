@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Check, Zap, Eye, Crown, Star, Rocket } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { GlassText } from "@/components/GlassText";
 
 const demoPlan = {
   name: "AI Website Demo",
@@ -116,7 +117,10 @@ export default function Pricing() {
             <span className="text-sm text-primary font-medium">Most Affordable in Market</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            Simple, Transparent <span className="text-primary">Pricing</span>
+            <GlassText text="Simple, Transparent" delay={0.1} charDelay={0.05} mode="word" />{" "}
+            <span className="text-primary">
+              <GlassText text="Pricing" delay={0.4} charDelay={0.06} mode="word" />
+            </span>
           </h1>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
             No hidden fees. No surprises. One-time payment for lifetime access.

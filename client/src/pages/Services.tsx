@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Globe, Briefcase, ShoppingCart, Layout, Server, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { GlassText } from "@/components/GlassText";
 
 const services = [
   {
@@ -52,7 +53,10 @@ export default function Services() {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            Our <span className="text-primary">Services</span>
+            <GlassText text="Our" delay={0.1} charDelay={0.05} mode="word" />{" "}
+            <span className="text-primary">
+              <GlassText text="Services" delay={0.3} charDelay={0.06} mode="word" />
+            </span>
           </h1>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
             Comprehensive web solutions powered by AI technology and delivered by expert engineers.
