@@ -276,6 +276,42 @@ export default function Pricing() {
           })}
         </div>
 
+        {/* How Revisions Work */}
+        <motion.div
+          className="bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] rounded-lg p-6 max-w-4xl mx-auto mb-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.7 }}
+        >
+          <h3 className="text-lg font-semibold text-foreground mb-4">How Revisions Work</h3>
+          <p className="text-muted-foreground text-sm mb-4">
+            A revision is a round of feedback where you share all your changes together. We make the updates, and that counts as one revision. Simple and straightforward.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+            <div>
+              <h4 className="font-medium text-foreground mb-2">Free Revisions by Plan</h4>
+              <ul className="space-y-1 text-muted-foreground">
+                <li>• Starter: 1 free revision</li>
+                <li>• Growth: 2 free revisions</li>
+                <li>• Pro Business: 3 free revisions</li>
+                <li>• Elite AI: Flexible minor revisions</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-medium text-foreground mb-2">Need Extra Changes?</h4>
+              <ul className="space-y-1 text-muted-foreground">
+                <li>• Extra revision: ₹199</li>
+                <li>• New page: ₹499/page</li>
+                <li>• Minor content change: ₹99</li>
+                <li>• Design change (single section): ₹299</li>
+              </ul>
+            </div>
+          </div>
+          <p className="text-muted-foreground text-xs mt-4">
+            New ideas after approval are treated as add-ons. Any extra work is confirmed with you before we begin.
+          </p>
+        </motion.div>
+
         {/* Common Notes */}
         <motion.div
           className="bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] rounded-lg p-6 max-w-4xl mx-auto"
@@ -283,16 +319,15 @@ export default function Pricing() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.8 }}
         >
-          <h3 className="text-lg font-semibold text-foreground mb-4">⚙️ Common Notes (Important)</h3>
+          <h3 className="text-lg font-semibold text-foreground mb-4">Good to Know</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-muted-foreground">
             <ul className="space-y-2">
-              <li>• No upfront development cost</li>
-              <li>• Hosting & domain can be client-provided or arranged separately</li>
-              <li>• Plans are monthly & cancel anytime</li>
+              <li>• One-time payment, lifetime ownership</li>
+              <li>• Hosting & domain arranged separately</li>
             </ul>
             <ul className="space-y-2">
               <li>• Custom features quoted separately</li>
-              <li>• Demo available for ₹149 (limited time offer)</li>
+              <li>• Demo available for ₹149 (limited time)</li>
             </ul>
           </div>
         </motion.div>
