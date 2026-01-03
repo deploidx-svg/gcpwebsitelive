@@ -156,19 +156,6 @@ export default function Navbar() {
                   Get Started
                 </a>
               </Button>
-              <Button
-                asChild
-                className="bg-primary/90 border border-primary hover:bg-primary"
-              >
-                <a
-                  href="https://clients.growithcp.live/order/product?pid=d5308768-251d-4859-d56c-747e390921e6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-testid="button-cta-navbar"
-                >
-                  Talk to AI Consultant
-                </a>
-              </Button>
             </div>
 
             <Button
@@ -241,19 +228,6 @@ export default function Navbar() {
                   </Link>
                 );
               })}
-              <Button
-                asChild
-                className="w-full mt-4 bg-primary/90 border border-primary hover:bg-primary"
-              >
-                <a
-                  href="https://clients.growithcp.live/order/product?pid=d5308768-251d-4859-d56c-747e390921e6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-testid="button-cta-mobile"
-                >
-                  Talk to AI Consultant
-                </a>
-              </Button>
             </div>
           </motion.div>
         )}
