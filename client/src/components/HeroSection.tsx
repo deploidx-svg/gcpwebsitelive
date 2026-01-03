@@ -224,12 +224,12 @@ export default function HeroSection() {
             <StackedImages />
             <Link href="/portfolio">
               <Button 
-                variant="ghost" 
-                className="text-muted-foreground hover:text-foreground gap-2"
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg gap-2"
                 data-testid="button-visit-portfolio"
               >
                 Visit Portfolio
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-5 h-5" />
               </Button>
             </Link>
           </motion.div>
