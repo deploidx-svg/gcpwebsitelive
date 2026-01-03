@@ -48,9 +48,13 @@ export default function About() {
           <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
             About <span className="text-primary">GrowithCP</span>
           </h1>
-          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+          <p className="text-muted-foreground max-w-2xl mx-auto text-lg mb-4">
             We're not a DIY website builder. We're a team of expert engineers who build your website for you.
           </p>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
+            <Shield className="w-4 h-4 text-primary" />
+            <span className="text-sm text-primary font-medium">Karnataka Government Registered Business</span>
+          </div>
         </motion.div>
 
         <motion.div

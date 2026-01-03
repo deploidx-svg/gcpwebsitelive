@@ -84,9 +84,14 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-white/[0.08] flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} GrowithCP. All rights reserved.
-          </p>
+          <div className="text-center sm:text-left">
+            <p className="text-sm text-muted-foreground">
+              © {new Date().getFullYear()} GrowithCP. All rights reserved.
+            </p>
+            <p className="text-xs text-primary mt-1">
+              Karnataka Government Registered Business
+            </p>
+          </div>
           <p className="text-sm text-muted-foreground">
             Built with AI-powered engineering
           </p>
