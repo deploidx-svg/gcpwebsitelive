@@ -26,7 +26,7 @@ function StackedImages() {
   }, [images.length]);
 
   return (
-    <div className="relative w-full h-[320px] sm:h-[380px] md:h-[420px] flex items-center justify-center">
+    <div className="relative w-full h-[320px] sm:h-[380px] md:h-[420px] flex items-center justify-start">
       <div className="relative w-[260px] sm:w-[320px] md:w-[380px] h-[180px] sm:h-[220px] md:h-[260px]">
         <AnimatePresence mode="popLayout">
           {images.map((image, index) => {
@@ -233,7 +233,7 @@ export default function HeroSection() {
           </div>
 
           <motion.div 
-            className="hidden lg:flex flex-col items-end gap-6 order-2"
+            className="hidden lg:flex flex-col items-start gap-6 order-2"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
