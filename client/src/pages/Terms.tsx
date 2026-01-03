@@ -29,8 +29,11 @@ export default function Terms() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          <p className="text-muted-foreground mb-10">
+          <p className="text-muted-foreground mb-4">
             By accessing or using GrowithCP services, you agree to the following Terms & Conditions. These terms ensure transparency, fair usage, and smooth project delivery for both GrowithCP and the client.
+          </p>
+          <p className="text-sm text-primary mb-10">
+            GrowithCP is a Karnataka Government registered business.
           </p>
 
           <div className="space-y-8">
