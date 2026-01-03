@@ -1,0 +1,219 @@
+Terms & Conditions
+
+GrowithCP
+
+Last updated: [add date]
+
+By accessing or using GrowithCP services, you agree to the following Terms & Conditions. These terms ensure transparency, fair usage, and smooth project delivery for both GrowithCP and the client.
+
+1. Services Offered
+
+GrowithCP provides done-for-you website design and development services based on the plan selected by the client.
+
+All projects follow a fixed-scope delivery model, where scope, features, pages, and structure are finalized before work begins. Any request outside the agreed scope is treated as an add-on service.
+
+2. Pricing & Payments
+
+All prices are one-time charges, unless explicitly stated.
+
+Full payment must be completed before project initiation.
+
+Add-on services are charged separately and executed only after client confirmation.
+
+Affordable pricing is maintained by strictly following scope, revision, and workflow limits.
+
+3. Revisions Policy
+
+Each plan includes a limited number of revisions:
+
+Starter Plan: 1 revision
+
+Growth Plan: 2 revisions
+
+Pro Business Plan: 3 revisions
+
+Elite AI Plan: Flexible minor revisions
+
+Revision definition:
+A revision means all requested changes shared together in one message or document.
+
+Additional revisions or changes are billed as per the pricing mentioned on the website.
+
+4. What Is Not Considered a Revision
+
+The following are not included as revisions:
+
+Adding new pages after approval
+
+Changing the overall design direction
+
+New features or integrations not listed in the plan
+
+Major content rewrites after approval
+
+Competitor-style redesign requests
+
+These are treated as new scope and may involve additional charges.
+
+5. Content, Assets & Client Responsibility
+
+Clients are responsible for providing accurate content, images, logos, and branding materials.
+
+Once content and layout are approved, further changes are considered revisions or add-ons.
+
+GrowithCP is not responsible for errors, legal issues, or compliance related to client-provided content.
+
+6. Data Security & Confidentiality
+
+GrowithCP respects client data and confidentiality:
+
+Client data is used only for project execution
+
+Shared credentials and files are handled securely
+
+Client data is never sold or shared without consent
+
+After project handover, clients are responsible for managing and securing their own credentials and data.
+
+7. Hosting, Domain & Third-Party Services
+
+Hosting, domain registration, email services, and third-party tools are NOT included, unless explicitly mentioned.
+
+GrowithCP is not responsible for downtime, data loss, security issues, or failures caused by hosting providers, plugins, APIs, or external platforms.
+
+Support for third-party services may be provided as guidance or a paid add-on.
+
+8. Delivery Timelines
+
+Delivery timelines are estimates and depend on:
+
+Timely client feedback
+
+Approval speed
+
+Scope clarity
+
+Delays caused by late responses or requirement changes are not the responsibility of GrowithCP.
+
+9. Add-On Services
+
+Optional services such as:
+
+Extra revisions
+
+New pages
+
+Feature additions
+
+Urgent updates
+
+are billed separately at affordable rates and confirmed before execution.
+
+10. Product Pricing & Commercial Responsibility
+
+GrowithCP does not manage or control product or service pricing displayed on client websites.
+
+All pricing, offers, taxes, and product details are the sole responsibility of the client.
+
+GrowithCP is not liable for incorrect pricing, disputes, or business losses arising from displayed information.
+
+11. Payments, Commissions & Transactions
+
+GrowithCP does not collect commissions from product sales unless explicitly agreed in writing.
+
+Payment gateways and transaction processing are handled by third-party services.
+
+GrowithCP is not responsible for:
+
+Payment failures
+
+Chargebacks
+
+Refund disputes
+
+Commission issues
+
+Gateway downtime
+
+Integration support is limited to technical setup only.
+
+12. E-Commerce & Order Handling Disclaimer
+
+If the website includes e-commerce or product listings:
+
+Order processing, delivery, returns, refunds, and customer support are handled entirely by the client
+
+GrowithCP is not a seller, reseller, or intermediary
+
+Legal compliance (GST, invoices, consumer laws) is the client’s responsibility
+
+13. No Sales or Revenue Guarantee
+
+GrowithCP does not guarantee:
+
+Sales
+
+Leads
+
+Traffic
+
+Conversions
+
+Revenue growth
+
+Website performance depends on market conditions, pricing, marketing, and business execution by the client.
+
+14. Client Communication & Conduct
+
+GrowithCP maintains a professional and respectful work environment.
+
+The following behavior is strictly not tolerated:
+
+Harassment or abusive language
+
+Threats or intimidation
+
+Repeated pressure beyond agreed scope
+
+Unprofessional conduct via calls, messages, or emails
+
+GrowithCP reserves the right to pause or terminate services without refund in such cases.
+
+15. Refund Policy
+
+Payments are non-refundable once work has started.
+
+No refunds for completed or partially completed projects.
+
+Client-initiated cancellations do not qualify for refunds.
+
+16. Ownership & Portfolio Usage
+
+Website ownership is transferred to the client after full payment.
+
+GrowithCP may showcase completed projects in its portfolio unless requested otherwise in writing.
+
+17. Limitation of Liability
+
+GrowithCP is not liable for:
+
+Business or revenue losses
+
+SEO rankings or performance outcomes
+
+Legal compliance of client content
+
+Third-party service failures
+
+GrowithCP provides technical services only.
+
+18. Updates to Terms
+
+GrowithCP may update these Terms & Conditions at any time.
+Continued use of services implies acceptance of updated terms.
+
+19. Contact Information
+
+📧 support@growithcp.com
+
+🌐 https://growithcp.com

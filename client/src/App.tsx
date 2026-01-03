@@ -44,6 +44,7 @@ const GrowthPlan = lazy(() => import("@/pages/GrowthPlan"));
 const ProBusinessPlan = lazy(() => import("@/pages/ProBusinessPlan"));
 const EliteAIPlan = lazy(() => import("@/pages/EliteAIPlan"));
 const ChatDemo = lazy(() => import("@/pages/ChatDemo"));
+const Terms = lazy(() => import("@/pages/Terms"));
 const NotFound = lazy(() => import("@/pages/not-found"));
 
 function Router() {
@@ -66,6 +67,7 @@ function Router() {
       <Route path="/pricing" component={Pricing} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
+      <Route path="/terms" component={Terms} />
       <Route component={NotFound} />
     </Switch>
   );
