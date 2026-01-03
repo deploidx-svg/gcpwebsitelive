@@ -84,7 +84,7 @@ export default function ContactForm() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] rounded-lg p-6"
+      className="bg-white/[0.03] backdrop-blur-xl border border-white/[0.08] rounded-lg p-6 shadow-[0_8px_32px_rgba(0,0,0,0.2)]"
     >
       <div className="mb-6">
         <h3 className="text-xl font-semibold text-foreground mb-2">Send us a Message</h3>

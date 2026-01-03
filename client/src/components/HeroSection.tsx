@@ -116,7 +116,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-sm animate-pulse-glow">
                 <Sparkles className="w-4 h-4 text-primary" />
                 <span className="text-sm text-primary font-medium">AI-Powered Development</span>
               </div>
@@ -216,10 +216,17 @@ export default function HeroSection() {
                 { value: "50+", label: "Projects Done" },
                 { value: "99%", label: "Satisfaction" },
               ].map((stat, index) => (
-                <div key={index} className="text-center lg:text-left" data-testid={`stat-${index}`}>
+                <motion.div 
+                  key={index} 
+                  className="text-center lg:text-left p-3 rounded-md bg-white/[0.02] backdrop-blur-sm border border-white/[0.05]" 
+                  data-testid={`stat-${index}`}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: 0.6 + index * 0.1 }}
+                >
                   <div className="text-3xl sm:text-4xl font-bold text-primary">{stat.value}</div>
                   <div className="text-sm text-muted-foreground mt-1">{stat.label}</div>
-                </div>
+                </motion.div>
               ))}
             </motion.div>
           </div>

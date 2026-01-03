@@ -118,7 +118,7 @@ export default function Portfolio() {
           {stats.map((stat, index) => (
             <motion.div
               key={stat.label}
-              className="text-center p-6 rounded-md bg-white/[0.02] backdrop-blur-xl border border-white/[0.08]"
+              className="text-center p-6 rounded-md bg-white/[0.03] backdrop-blur-xl border border-white/[0.08] shadow-[0_8px_32px_rgba(0,0,0,0.2)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.3)] transition-all duration-300"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
@@ -146,7 +146,7 @@ export default function Portfolio() {
             </p>
           </div>
 
-          <div className="relative rounded-lg overflow-hidden bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] p-8">
+          <div className="relative rounded-lg overflow-hidden bg-white/[0.03] backdrop-blur-xl border border-white/[0.08] p-8 shadow-[0_8px_32px_rgba(0,0,0,0.2)]">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
               {/* Image Section - Takes up 2/3 on large screens */}
               <div className="lg:col-span-2 order-1">
@@ -238,7 +238,7 @@ export default function Portfolio() {
             {projects.slice(1).map((project, index) => (
               <motion.div
                 key={project.id}
-                className="group relative rounded-lg overflow-hidden bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] transition-all duration-300 hover:border-primary/50"
+                className="group relative rounded-lg overflow-hidden bg-white/[0.03] backdrop-blur-xl border border-white/[0.08] transition-all duration-300 hover:border-primary/50 shadow-[0_8px_32px_rgba(0,0,0,0.2)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.3)]"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}

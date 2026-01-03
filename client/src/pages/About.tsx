@@ -58,7 +58,7 @@ export default function About() {
         </motion.div>
 
         <motion.div
-          className="mb-20 p-8 rounded-md bg-white/[0.03] backdrop-blur-xl border border-white/[0.08]"
+          className="mb-20 p-8 rounded-md bg-white/[0.03] backdrop-blur-xl border border-white/[0.08] shadow-[0_8px_32px_rgba(0,0,0,0.2)]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}

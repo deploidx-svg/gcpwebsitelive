@@ -132,13 +132,22 @@ export default function Pricing() {
         >
           <div className="max-w-md mx-auto">
             <motion.div
-              className="group relative p-6 rounded-md overflow-visible bg-white/[0.03] backdrop-blur-xl border border-white/[0.08] transition-all duration-300"
-              whileHover={{ y: -4 }}
+              className="group relative p-6 rounded-md overflow-hidden bg-white/[0.03] backdrop-blur-xl border border-white/[0.08] transition-all duration-300 shadow-[0_8px_32px_rgba(0,0,0,0.2)]"
+              whileHover={{ 
+                y: -4,
+                boxShadow: "0 12px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(255, 255, 255, 0.05)",
+              }}
             >
               <div
-                className="absolute inset-0 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"
+                className="absolute inset-0 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 style={{
                   background: "radial-gradient(circle at center, hsl(345 70% 42% / 0.15) 0%, transparent 70%)",
+                }}
+              />
+              <div 
+                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+                style={{
+                  background: "linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 50%, rgba(255,255,255,0.05) 100%)",
                 }}
               />
 
@@ -198,9 +207,10 @@ export default function Pricing() {
               <motion.div
                 key={plan.name}
                 className={cn(
-                  "group relative p-6 rounded-md overflow-visible",
+                  "group relative p-6 rounded-md overflow-hidden",
                   "bg-white/[0.03] backdrop-blur-xl",
                   "border transition-all duration-300",
+                  "shadow-[0_8px_32px_rgba(0,0,0,0.2)]",
                   plan.popular
                     ? "border-primary/50"
                     : "border-white/[0.08]"
@@ -208,18 +218,27 @@ export default function Pricing() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
-                whileHover={{ y: -4 }}
+                whileHover={{ 
+                  y: -4,
+                  boxShadow: "0 12px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(255, 255, 255, 0.05)",
+                }}
               >
                 {plan.popular && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
                     <Badge className="bg-primary text-primary-foreground">Most Popular</Badge>
                   </div>
                 )}
 
                 <div
-                  className="absolute inset-0 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"
+                  className="absolute inset-0 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                   style={{
                     background: "radial-gradient(circle at center, hsl(345 70% 42% / 0.15) 0%, transparent 70%)",
+                  }}
+                />
+                <div 
+                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+                  style={{
+                    background: "linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 50%, rgba(255,255,255,0.05) 100%)",
                   }}
                 />
 

@@ -7,17 +7,24 @@ export default function CTASection() {
     <section className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
         <motion.div
-          className="relative p-8 sm:p-12 rounded-md overflow-hidden text-center"
+          className="relative p-8 sm:p-12 rounded-md overflow-hidden text-center shadow-[0_8px_50px_rgba(0,0,0,0.3)]"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
           <div 
-            className="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary/10 to-transparent"
+            className="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary/10 to-transparent animate-pulse"
+            style={{ animationDuration: "4s" }}
           />
           <div 
-            className="absolute inset-0 backdrop-blur-xl bg-white/[0.02] border border-white/[0.08] rounded-md"
+            className="absolute inset-0 backdrop-blur-xl bg-white/[0.03] border border-white/[0.1] rounded-md"
+          />
+          <div 
+            className="absolute inset-0 opacity-30"
+            style={{
+              background: "linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 40%, transparent 60%, rgba(255,255,255,0.05) 100%)",
+            }}
           />
           
           <div className="relative z-10">
