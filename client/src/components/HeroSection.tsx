@@ -20,13 +20,13 @@ function StackedImages() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 4000);
+    }, 5000);
     return () => clearInterval(interval);
   }, [images.length]);
 
   return (
-    <div className="relative w-full h-[320px] sm:h-[380px] md:h-[420px] flex items-center justify-center perspective-[1200px]">
-      <div className="relative w-[260px] sm:w-[320px] md:w-[380px] h-[180px] sm:h-[220px] md:h-[260px]" style={{ transformStyle: 'preserve-3d' }}>
+    <div className="relative w-full h-[320px] sm:h-[380px] md:h-[420px] flex items-center justify-center">
+      <div className="relative w-[260px] sm:w-[320px] md:w-[380px] h-[180px] sm:h-[220px] md:h-[260px]">
         <AnimatePresence mode="popLayout">
           {images.map((image, index) => {
             const position = (index - currentIndex + images.length) % images.length;
@@ -36,44 +36,32 @@ function StackedImages() {
             return (
               <motion.div
                 key={image.alt}
-                className="absolute inset-0 rounded-2xl overflow-hidden border border-primary/30 bg-background"
+                className="absolute inset-0 rounded-2xl overflow-hidden border border-primary/30 bg-background will-change-transform"
                 initial={{ 
-                  scale: 0.7,
+                  scale: 0.85,
                   opacity: 0,
-                  rotateY: 25,
-                  rotateX: -10,
-                  z: -300,
-                  y: 80,
+                  y: 40,
                 }}
                 animate={{ 
-                  scale: 1 - position * 0.1,
-                  opacity: 1 - position * 0.35,
+                  scale: 1 - position * 0.08,
+                  opacity: 1 - position * 0.3,
                   zIndex: images.length - position,
-                  rotateY: position * -5,
-                  rotateX: position * 3,
-                  z: position * -80,
-                  y: position * 25,
-                  x: position * 20,
-                  boxShadow: position === 0 
-                    ? '0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 60px -15px rgba(239, 108, 88, 0.3)' 
-                    : '0 10px 30px -10px rgba(0, 0, 0, 0.3)',
+                  y: position * 20,
+                  x: position * 15,
                 }}
                 exit={{ 
-                  scale: 1.15,
+                  scale: 1.05,
                   opacity: 0,
-                  rotateY: -30,
-                  rotateX: 8,
-                  z: 150,
-                  y: -60,
-                  x: -80,
+                  y: -30,
                 }}
                 transition={{
-                  duration: 1,
-                  ease: [0.22, 1, 0.36, 1],
+                  duration: 0.6,
+                  ease: "easeOut",
                 }}
                 style={{
-                  transformStyle: 'preserve-3d',
-                  transformOrigin: 'center center',
+                  boxShadow: position === 0 
+                    ? '0 20px 40px -10px rgba(0, 0, 0, 0.4)' 
+                    : '0 10px 20px -8px rgba(0, 0, 0, 0.2)',
                 }}
               >
                 <div className="h-6 sm:h-7 bg-card flex items-center px-2 sm:px-3 gap-1.5 sm:gap-2 border-b border-primary/10">
@@ -92,12 +80,11 @@ function StackedImages() {
                     decoding="async"
                   />
                 </div>
-                <motion.div 
-                  className="absolute inset-0 bg-black/20 pointer-events-none"
-                  animate={{
-                    opacity: position === 0 ? 0 : 0.15 + position * 0.15,
+                <div 
+                  className="absolute inset-0 pointer-events-none transition-opacity duration-500"
+                  style={{
+                    backgroundColor: `rgba(0, 0, 0, ${position === 0 ? 0 : 0.1 + position * 0.1})`,
                   }}
-                  transition={{ duration: 0.8 }}
                 />
               </motion.div>
             );
@@ -112,19 +99,11 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-24 pb-20 px-4 overflow-hidden">
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <motion.div
+        <div
           className="w-[600px] h-[600px] rounded-full opacity-20"
           style={{
             background: "radial-gradient(circle, hsl(345 70% 42%) 0%, transparent 60%)",
             filter: "blur(100px)",
-          }}
-          animate={{
-            scale: [1, 1.1, 1],
-          }}
-          transition={{
-            duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut",
           }}
         />
       </div>
