@@ -52,7 +52,7 @@ export default function Navbar() {
                         location === link.href
                           ? "text-primary bg-primary/10"
                           : isHighlighted
-                            ? "text-foreground bg-white/[0.08] backdrop-blur-sm border border-white/[0.12] shadow-[0_0_15px_rgba(255,255,255,0.05)]"
+                            ? "text-foreground bg-white/[0.08] backdrop-blur-sm border border-white/[0.12] shadow-[0_0_15px_rgba(255,255,255,0.05)] glass-shimmer"
                             : "text-muted-foreground hover:text-foreground hover:bg-white/5"
                       )}
                       data-testid={`link-nav-${link.label.toLowerCase()}`}
