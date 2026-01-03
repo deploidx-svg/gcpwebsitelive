@@ -35,7 +35,7 @@ function StackedImages() {
             return (
               <motion.div
                 key={image.alt}
-                className="absolute inset-0 rounded-xl overflow-hidden shadow-2xl border border-white/10 bg-[#1a1a1a]"
+                className="absolute inset-0 rounded-xl overflow-hidden shadow-2xl border border-primary/20 bg-background"
                 initial={{ 
                   scale: 0.88,
                   opacity: 0,
@@ -66,14 +66,14 @@ function StackedImages() {
                   transformOrigin: 'bottom left',
                 }}
               >
-                <div className="h-6 sm:h-7 bg-[#2a2a2a] flex items-center px-2 sm:px-3 gap-1.5 sm:gap-2 border-b border-white/5">
+                <div className="h-6 sm:h-7 bg-card flex items-center px-2 sm:px-3 gap-1.5 sm:gap-2 border-b border-primary/10">
                   <div className="flex gap-1 sm:gap-1.5">
-                    <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#ff5f57]" />
-                    <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#febc2e]" />
-                    <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#28c840]" />
+                    <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-primary/60" />
+                    <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-primary/40" />
+                    <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-primary/20" />
                   </div>
                   <div className="flex-1 flex justify-center">
-                    <div className="bg-[#1a1a1a] rounded px-2 sm:px-3 py-0.5 text-[8px] sm:text-[10px] text-white/40 max-w-[120px] sm:max-w-[160px] truncate">
+                    <div className="bg-background rounded px-2 sm:px-3 py-0.5 text-[8px] sm:text-[10px] text-muted-foreground max-w-[120px] sm:max-w-[160px] truncate">
                       growithcp.com
                     </div>
                   </div>
