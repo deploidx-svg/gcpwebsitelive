@@ -203,7 +203,7 @@ export default function HeroSection() {
                   <motion.img 
                     src={aiLogoImage} 
                     alt="AI" 
-                    className="w-10 h-10"
+                    className="w-14 h-14 -ml-2"
                     animate={{ rotate: 360 }}
                     transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
                   />
