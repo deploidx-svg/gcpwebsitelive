@@ -131,22 +131,22 @@ export default function HeroSection() {
         />
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div className="text-center lg:text-left order-2 lg:order-1">
+      <div className="relative z-10 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="text-center lg:text-left order-2 lg:order-1 space-y-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
                 <Sparkles className="w-4 h-4 text-primary" />
                 <span className="text-sm text-primary font-medium">AI-Powered Development</span>
               </div>
             </motion.div>
 
             <motion.h1
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-6 leading-tight"
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-[1.1] tracking-tight"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
@@ -159,7 +159,7 @@ export default function HeroSection() {
             </motion.h1>
 
             <motion.p
-              className="text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-10"
+              className="text-lg sm:text-xl text-muted-foreground max-w-lg mx-auto lg:mx-0 leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -168,7 +168,7 @@ export default function HeroSection() {
             </motion.p>
 
             <motion.div
-              className="flex flex-col sm:flex-row items-center lg:justify-start justify-center gap-4"
+              className="flex flex-col sm:flex-row items-center lg:items-start lg:justify-start justify-center gap-4 pt-2"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
@@ -202,7 +202,7 @@ export default function HeroSection() {
             </motion.div>
 
             <motion.div
-              className="mt-12 grid grid-cols-3 gap-6 max-w-md mx-auto lg:mx-0"
+              className="grid grid-cols-3 gap-8 max-w-md mx-auto lg:mx-0 pt-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.5 }}
@@ -212,16 +212,16 @@ export default function HeroSection() {
                 { value: "50+", label: "Projects Done" },
                 { value: "99%", label: "Satisfaction" },
               ].map((stat, index) => (
-                <div key={index} className="text-center lg:text-left">
-                  <div className="text-2xl sm:text-3xl font-bold text-primary">{stat.value}</div>
-                  <div className="text-xs sm:text-sm text-muted-foreground">{stat.label}</div>
+                <div key={index} className="text-center lg:text-left" data-testid={`stat-${index}`}>
+                  <div className="text-3xl sm:text-4xl font-bold text-primary">{stat.value}</div>
+                  <div className="text-sm text-muted-foreground mt-1">{stat.label}</div>
                 </div>
               ))}
             </motion.div>
           </div>
 
           <motion.div 
-            className="order-1 lg:order-2"
+            className="order-1 lg:order-2 flex justify-center lg:justify-end"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
