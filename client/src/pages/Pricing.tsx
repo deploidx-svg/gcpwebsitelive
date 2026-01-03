@@ -332,6 +332,114 @@ export default function Pricing() {
           </div>
         </motion.div>
 
+        {/* Terms & Conditions */}
+        <motion.div
+          className="bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] rounded-lg p-6 max-w-4xl mx-auto mt-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.9 }}
+        >
+          <h3 className="text-lg font-semibold text-foreground mb-2">Terms & Conditions</h3>
+          <p className="text-muted-foreground text-xs mb-6">Last updated: January 2026</p>
+          <p className="text-muted-foreground text-sm mb-6">
+            By accessing or using GrowithCP services, you agree to the following Terms & Conditions.
+          </p>
+          
+          <div className="space-y-6 text-sm">
+            <TermsSection title="1. Services Offered">
+              <p>GrowithCP provides done-for-you website design and development services based on the plan selected by the client.</p>
+              <p>All projects follow a fixed-scope delivery model. Any request outside the agreed scope is treated as an add-on service.</p>
+            </TermsSection>
+
+            <TermsSection title="2. Pricing & Payments">
+              <ul>
+                <li>All prices are one-time charges, unless explicitly stated.</li>
+                <li>Full payment must be completed before project initiation.</li>
+                <li>Add-on services are charged separately and executed only after client confirmation.</li>
+              </ul>
+            </TermsSection>
+
+            <TermsSection title="3. Revisions Policy">
+              <p>Each plan includes limited revisions: Starter (1), Growth (2), Pro Business (3), Elite AI (flexible minor).</p>
+              <p>A revision means all requested changes shared together in one message. Additional revisions are billed separately.</p>
+            </TermsSection>
+
+            <TermsSection title="4. What Is Not Considered a Revision">
+              <ul>
+                <li>Adding new pages after approval</li>
+                <li>Changing the overall design direction</li>
+                <li>New features or integrations not listed in the plan</li>
+                <li>Major content rewrites after approval</li>
+              </ul>
+              <p>These are treated as new scope and may involve additional charges.</p>
+            </TermsSection>
+
+            <TermsSection title="5. Content, Assets & Client Responsibility">
+              <p>Clients are responsible for providing accurate content, images, logos, and branding materials. Once approved, further changes are considered revisions or add-ons.</p>
+            </TermsSection>
+
+            <TermsSection title="6. Data Security & Confidentiality">
+              <p>Client data is used only for project execution and handled securely. Client data is never sold or shared without consent.</p>
+            </TermsSection>
+
+            <TermsSection title="7. Hosting, Domain & Third-Party Services">
+              <p>Hosting, domain registration, and third-party tools are NOT included unless explicitly mentioned. GrowithCP is not responsible for third-party service failures.</p>
+            </TermsSection>
+
+            <TermsSection title="8. Delivery Timelines">
+              <p>Delivery timelines are estimates and depend on timely client feedback and approval speed. Delays caused by late responses are not our responsibility.</p>
+            </TermsSection>
+
+            <TermsSection title="9. Add-On Services">
+              <p>Optional services (extra revisions, new pages, feature additions, urgent updates) are billed separately and confirmed before execution.</p>
+            </TermsSection>
+
+            <TermsSection title="10. Product Pricing & Commercial Responsibility">
+              <p>GrowithCP does not manage product pricing on client websites. All pricing and product details are the sole responsibility of the client.</p>
+            </TermsSection>
+
+            <TermsSection title="11. Payments, Commissions & Transactions">
+              <p>GrowithCP does not collect commissions from product sales. Payment gateways are handled by third-party services. We are not responsible for payment failures, chargebacks, or gateway issues.</p>
+            </TermsSection>
+
+            <TermsSection title="12. E-Commerce & Order Handling">
+              <p>Order processing, delivery, returns, and customer support are handled entirely by the client. GrowithCP is not a seller or intermediary.</p>
+            </TermsSection>
+
+            <TermsSection title="13. No Sales or Revenue Guarantee">
+              <p>GrowithCP does not guarantee sales, leads, traffic, conversions, or revenue growth. Website performance depends on market conditions and business execution.</p>
+            </TermsSection>
+
+            <TermsSection title="14. Client Communication & Conduct">
+              <p>Professional and respectful conduct is expected. Harassment, threats, or unprofessional behavior may result in service termination without refund.</p>
+            </TermsSection>
+
+            <TermsSection title="15. Refund Policy">
+              <p>Payments are non-refundable once work has started. No refunds for completed or partially completed projects.</p>
+            </TermsSection>
+
+            <TermsSection title="16. Ownership & Portfolio Usage">
+              <p>Website ownership is transferred to the client after full payment. GrowithCP may showcase projects in its portfolio unless requested otherwise.</p>
+            </TermsSection>
+
+            <TermsSection title="17. Limitation of Liability">
+              <p>GrowithCP is not liable for business losses, SEO rankings, legal compliance of client content, or third-party service failures. We provide technical services only.</p>
+            </TermsSection>
+
+            <TermsSection title="18. Updates to Terms">
+              <p>GrowithCP may update these Terms at any time. Continued use of services implies acceptance of updated terms.</p>
+            </TermsSection>
+
+            <TermsSection title="19. Contact Information">
+              <p>
+                <a href="mailto:support@growithcp.com" className="text-primary hover:underline" data-testid="link-terms-email">support@growithcp.com</a>
+                {" | "}
+                <a href="https://growithcp.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline" data-testid="link-terms-website">growithcp.com</a>
+              </p>
+            </TermsSection>
+          </div>
+        </motion.div>
+
         <motion.div
           className="mt-16 text-center"
           initial={{ opacity: 0 }}
@@ -351,6 +459,17 @@ export default function Pricing() {
             </a>
           </p>
         </motion.div>
+      </div>
+    </div>
+  );
+}
+
+function TermsSection({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <div>
+      <h4 className="font-medium text-foreground mb-2">{title}</h4>
+      <div className="text-muted-foreground space-y-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1">
+        {children}
       </div>
     </div>
   );
