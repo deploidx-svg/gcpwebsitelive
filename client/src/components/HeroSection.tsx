@@ -19,13 +19,13 @@ function StackedImages() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 3500);
+    }, 4000);
     return () => clearInterval(interval);
   }, [images.length]);
 
   return (
-    <div className="relative w-full h-[320px] sm:h-[380px] md:h-[420px] flex items-center justify-center">
-      <div className="relative w-[260px] sm:w-[320px] md:w-[380px] h-[180px] sm:h-[220px] md:h-[260px]">
+    <div className="relative w-full h-[320px] sm:h-[380px] md:h-[420px] flex items-center justify-center perspective-[1200px]">
+      <div className="relative w-[260px] sm:w-[320px] md:w-[380px] h-[180px] sm:h-[220px] md:h-[260px]" style={{ transformStyle: 'preserve-3d' }}>
         <AnimatePresence mode="popLayout">
           {images.map((image, index) => {
             const position = (index - currentIndex + images.length) % images.length;
@@ -37,33 +37,39 @@ function StackedImages() {
                 key={image.alt}
                 className="absolute inset-0 rounded-xl overflow-hidden shadow-2xl border border-primary/20 bg-background"
                 initial={{ 
-                  scale: 0.88,
+                  scale: 0.8,
                   opacity: 0,
-                  x: 40,
-                  y: 30,
-                  rotate: 6,
+                  rotateY: 15,
+                  rotateX: -5,
+                  z: -200,
+                  y: 60,
                 }}
                 animate={{ 
-                  scale: 1 - position * 0.06,
-                  opacity: 1 - position * 0.25,
+                  scale: 1 - position * 0.08,
+                  opacity: 1 - position * 0.3,
                   zIndex: images.length - position,
-                  x: position * 25,
-                  y: position * 18,
-                  rotate: position * 4,
+                  rotateY: position * -3,
+                  rotateX: position * 2,
+                  z: position * -50,
+                  y: position * 20,
+                  x: position * 15,
                 }}
                 exit={{ 
-                  scale: 0.85,
+                  scale: 1.05,
                   opacity: 0,
-                  x: -30,
-                  y: -20,
-                  rotate: -8,
+                  rotateY: -20,
+                  rotateX: 5,
+                  z: 100,
+                  y: -40,
+                  x: -60,
                 }}
                 transition={{
-                  duration: 0.8,
-                  ease: [0.4, 0, 0.2, 1],
+                  duration: 0.9,
+                  ease: [0.25, 0.46, 0.45, 0.94],
                 }}
                 style={{
-                  transformOrigin: 'bottom left',
+                  transformStyle: 'preserve-3d',
+                  transformOrigin: 'center center',
                 }}
               >
                 <div className="h-6 sm:h-7 bg-card flex items-center px-2 sm:px-3 gap-1.5 sm:gap-2 border-b border-primary/10">
