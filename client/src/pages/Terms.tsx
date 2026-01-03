@@ -24,16 +24,14 @@ export default function Terms() {
         </motion.div>
 
         <motion.div
-          className="prose prose-invert max-w-none"
+          className="bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] rounded-lg p-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          <div className="bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] rounded-lg p-6 mb-6">
-            <p className="text-muted-foreground text-sm">
-              By accessing or using GrowithCP services, you agree to the following Terms & Conditions. These terms ensure transparency, fair usage, and smooth project delivery for both GrowithCP and the client.
-            </p>
-          </div>
+          <p className="text-muted-foreground mb-10">
+            By accessing or using GrowithCP services, you agree to the following Terms & Conditions. These terms ensure transparency, fair usage, and smooth project delivery for both GrowithCP and the client.
+          </p>
 
           <Section title="1. Services Offered">
             <p>GrowithCP provides done-for-you website design and development services based on the plan selected by the client.</p>
@@ -237,9 +235,9 @@ export default function Terms() {
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <div className="bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] rounded-lg p-6 mb-4">
-      <h2 className="text-lg font-semibold text-foreground mb-4">{title}</h2>
-      <div className="text-sm text-muted-foreground space-y-3 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1 [&_strong]:text-foreground">
+    <div className="mb-8">
+      <h2 className="text-xl font-bold text-foreground mb-4">{title}</h2>
+      <div className="text-sm text-muted-foreground space-y-3 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-2 [&_strong]:text-foreground">
         {children}
       </div>
     </div>
