@@ -127,10 +127,10 @@ export default function EliteAIPlan() {
           <div className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 rounded-lg p-6 border border-primary/20 mb-8">
             <div className="flex items-center justify-center gap-4 mb-4">
               <span className="text-3xl font-bold text-primary">₹4,999</span>
-              <span className="text-muted-foreground">/month</span>
+              <span className="text-muted-foreground">(one time)</span>
               <Badge className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white">Elite</Badge>
             </div>
-            <p className="text-muted-foreground">Unlimited everything • Custom development • VIP support</p>
+            <p className="text-muted-foreground">One-time payment • Unlimited everything • VIP support</p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -413,7 +413,7 @@ export default function EliteAIPlan() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                💬 Become Elite - ₹4,999/month
+                💬 Become Elite - ₹4,999
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>

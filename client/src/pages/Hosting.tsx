@@ -73,21 +73,21 @@ const hostingPlans = [
   {
     name: "Basic Hosting",
     price: "₹299",
-    period: "/month",
+    period: "(one time)",
     features: ["1 website", "10GB storage", "Unlimited bandwidth", "Free SSL", "Daily backups"],
     recommended: false
   },
   {
     name: "Professional Hosting",
     price: "₹599",
-    period: "/month",
+    period: "(one time)",
     features: ["5 websites", "50GB storage", "Unlimited bandwidth", "Priority support", "Advanced security"],
     recommended: true
   },
   {
     name: "Business Hosting",
     price: "₹999",
-    period: "/month",
+    period: "(one time)",
     features: ["Unlimited websites", "100GB storage", "CDN included", "Dedicated IP", "White-label support"],
     recommended: false
   }

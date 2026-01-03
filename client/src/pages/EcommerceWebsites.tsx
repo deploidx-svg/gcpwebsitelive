@@ -92,21 +92,21 @@ const pricingTiers = [
   {
     name: "E-Commerce Starter",
     price: "₹2,999",
-    period: "/month",
+    period: "(one time)",
     features: ["Up to 50 products", "Basic payment integration", "Order management", "Mobile responsive"],
     recommended: false
   },
   {
     name: "E-Commerce Pro",
     price: "₹4,999",
-    period: "/month",
+    period: "(one time)",
     features: ["Up to 500 products", "Advanced analytics", "Multi-channel selling", "Priority support"],
     recommended: true
   },
   {
     name: "E-Commerce Elite",
     price: "₹7,999",
-    period: "/month",
+    period: "(one time)",
     features: ["Unlimited products", "Custom integrations", "Advanced marketing", "Dedicated account manager"],
     recommended: false
   }

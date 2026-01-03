@@ -14,10 +14,10 @@ const navLinks = [
     label: "Products",
     submenu: [
       { href: "/demo-plan", label: "AI Website Demo - ₹149" },
-      { href: "/starter-plan", label: "Starter Plan - ₹999/month" },
-      { href: "/growth-plan", label: "Growth Plan - ₹1,999/month" },
-      { href: "/pro-business-plan", label: "Pro Business - ₹2,999/month" },
-      { href: "/elite-ai-plan", label: "Elite AI Plan - ₹4,999/month" },
+      { href: "/starter-plan", label: "Starter Plan - ₹999" },
+      { href: "/growth-plan", label: "Growth Plan - ₹1,999" },
+      { href: "/pro-business-plan", label: "Pro Business - ₹2,999" },
+      { href: "/elite-ai-plan", label: "Elite AI Plan - ₹4,999" },
     ]
   },
   { href: "/portfolio", label: "Portfolio" },

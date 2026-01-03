@@ -72,21 +72,21 @@ const pricingTiers = [
   {
     name: "Starter",
     price: "₹999",
-    period: "/month",
+    period: "(one time)",
     features: ["1-page website", "Basic SEO", "Contact form", "Mobile responsive"],
     recommended: false
   },
   {
     name: "Growth",
     price: "₹1,999",
-    period: "/month",
+    period: "(one time)",
     features: ["Up to 5 pages", "Advanced SEO", "Analytics", "Priority support"],
     recommended: true
   },
   {
     name: "Pro",
     price: "₹2,999",
-    period: "/month",
+    period: "(one time)",
     features: ["Up to 10 pages", "Custom features", "Performance optimization", "Dedicated support"],
     recommended: false
   }

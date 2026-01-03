@@ -117,10 +117,10 @@ export default function GrowthPlan() {
           <div className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 rounded-lg p-6 border border-primary/20 mb-8">
             <div className="flex items-center justify-center gap-4 mb-4">
               <span className="text-3xl font-bold text-primary">₹1,999</span>
-              <span className="text-muted-foreground">/month</span>
+              <span className="text-muted-foreground">(one time)</span>
               <Badge className="bg-primary text-primary-foreground">Most Popular</Badge>
             </div>
-            <p className="text-muted-foreground">Best value for growing businesses • Advanced features included</p>
+            <p className="text-muted-foreground">One-time payment • Best value for growing businesses</p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -334,7 +334,7 @@ export default function GrowthPlan() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                💬 Start Growing - ₹1,999/month
+                💬 Start Growing - ₹1,999
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>

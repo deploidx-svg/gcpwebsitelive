@@ -25,14 +25,14 @@ const subscriptionPlans = [
   {
     name: "Starter Plan",
     price: "₹999",
-    period: "/month",
+    period: "(one time)",
     subtitle: "Best for individuals & small services",
     features: [
       "1-page AI-designed website",
       "AI-written content (basic)",
       "Mobile responsive design",
       "Monthly AI content refresh",
-      "Free minor text changes (1/month)",
+      "Free minor text changes included",
       "Basic SEO setup",
       "GrowithCP branding",
     ],
@@ -47,7 +47,7 @@ const subscriptionPlans = [
   {
     name: "Growth Plan",
     price: "₹1,999",
-    period: "/month",
+    period: "(one time)",
     subtitle: "Best for startups & professionals",
     features: [
       "Includes everything in Starter +",
@@ -66,7 +66,7 @@ const subscriptionPlans = [
   {
     name: "Pro Business Plan",
     price: "₹2,999",
-    period: "/month",
+    period: "(one time)",
     subtitle: "Best for serious businesses",
     features: [
       "Includes everything in Growth +",
@@ -85,7 +85,7 @@ const subscriptionPlans = [
   {
     name: "Elite AI Plan",
     price: "₹4,999",
-    period: "/month",
+    period: "(one time)",
     subtitle: "Best for e-commerce & high-scale brands",
     features: [
       "Includes everything in Pro +",
@@ -121,7 +121,7 @@ export default function Pricing() {
             Simple, Transparent <span className="text-primary">Pricing</span>
           </h1>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            No hidden fees. No surprises. Monthly subscriptions with cancel anytime.
+            No hidden fees. No surprises. One-time payment for lifetime access.
           </p>
         </motion.div>
 
