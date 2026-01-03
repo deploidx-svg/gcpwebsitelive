@@ -58,14 +58,13 @@ const whatsIncluded = [
   "Includes everything in Growth +",
   "Up to 10 pages website",
   "Advanced UI/UX design",
+  "3 free revisions included",
   "AI-optimized SEO content",
   "Blog/updates section",
   "AI chatbot integration",
   "Dynamic content (admin-controlled)",
-  "Speed & performance optimization",
-  "Advanced analytics integration",
+  "Analytics integration",
   "Priority support",
-  "Custom feature requests (within scope)",
   "No GrowithCP branding"
 ];
 

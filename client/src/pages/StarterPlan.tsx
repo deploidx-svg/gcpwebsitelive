@@ -54,13 +54,11 @@ const whatsIncluded = [
   "1-page AI-designed website",
   "AI-written content (basic)",
   "Mobile responsive design",
+  "1 free revision included",
   "Contact form integration",
   "Basic SEO setup",
-  "Monthly AI content refresh",
-  "Free minor text changes included",
   "GrowithCP branding",
-  "24/7 customer support",
-  "99.9% uptime guarantee"
+  "24/7 customer support"
 ];
 
 const notIncluded = [

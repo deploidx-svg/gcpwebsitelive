@@ -55,11 +55,10 @@ const whatsIncluded = [
   "Includes everything in Starter +",
   "Up to 5 pages website",
   "Improved AI content + brand tone",
+  "2 free revisions included",
   "Contact form integration",
   "WhatsApp chat button",
-  "Monthly design updates",
   "Image optimization",
-  "Basic performance optimization",
   "Reduced GrowithCP branding",
   "Priority customer support"
 ];

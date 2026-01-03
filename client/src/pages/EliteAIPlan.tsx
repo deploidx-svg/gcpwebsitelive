@@ -61,14 +61,13 @@ const whatsIncluded = [
   "Includes everything in Pro Business +",
   "Unlimited pages website",
   "E-commerce or advanced backend support",
+  "Flexible minor revisions",
   "Advanced AI chatbot integration",
   "Dynamic content (admin-controlled)",
   "Advanced SEO + schema setup",
   "Security hardening (enterprise level)",
-  "Weekly updates & monitoring",
   "Dedicated support manager",
   "Custom feature requests (full scope)",
-  "API integrations & custom development",
   "White-label solution available"
 ];
 
