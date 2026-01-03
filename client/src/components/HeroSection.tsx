@@ -191,7 +191,7 @@ export default function HeroSection() {
               <Button
                 size="lg"
                 asChild
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg gap-3"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 text-lg gap-3 overflow-visible relative"
               >
                 <a
                   href="https://clients.growithcp.live/order/product?pid=d5308768-251d-4859-d56c-747e390921e6"
@@ -203,11 +203,11 @@ export default function HeroSection() {
                   <motion.img 
                     src={aiLogoImage} 
                     alt="AI" 
-                    className="w-20 h-20 -ml-4"
+                    className="w-16 h-16 absolute -left-6"
                     animate={{ rotate: 360 }}
                     transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
                   />
-                  Talk to AI Website Consultant
+                  <span className="ml-8">Talk to AI Website Consultant</span>
                   <ArrowRight className="w-5 h-5" />
                 </a>
               </Button>
