@@ -128,7 +128,7 @@ export default function HeroSection() {
 
       <div className="relative z-10 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div className="text-center lg:text-left order-2 lg:order-1 space-y-8">
+          <div className="text-center lg:text-left order-1 lg:order-1 space-y-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -152,6 +152,25 @@ export default function HeroSection() {
                 Delivered the Same Day.
               </span>
             </motion.h1>
+
+            <motion.div 
+              className="lg:hidden flex flex-col items-center gap-6"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              <StackedImages />
+              <Link href="/portfolio">
+                <Button 
+                  size="lg"
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg gap-2"
+                  data-testid="button-visit-portfolio-mobile"
+                >
+                  Visit Portfolio
+                  <ArrowRight className="w-5 h-5" />
+                </Button>
+              </Link>
+            </motion.div>
 
             <motion.p
               className="text-lg sm:text-xl text-muted-foreground max-w-lg mx-auto lg:mx-0 leading-relaxed"
@@ -216,7 +235,7 @@ export default function HeroSection() {
           </div>
 
           <motion.div 
-            className="order-1 lg:order-2 flex flex-col items-center lg:items-end gap-6"
+            className="hidden lg:flex flex-col items-end gap-6 order-2"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
