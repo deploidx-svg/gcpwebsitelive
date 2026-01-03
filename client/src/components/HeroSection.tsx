@@ -35,37 +35,40 @@ function StackedImages() {
             return (
               <motion.div
                 key={image.alt}
-                className="absolute inset-0 rounded-xl overflow-hidden shadow-2xl border border-primary/20 bg-background"
+                className="absolute inset-0 rounded-2xl overflow-hidden border border-primary/30 bg-background"
                 initial={{ 
-                  scale: 0.8,
+                  scale: 0.7,
                   opacity: 0,
-                  rotateY: 15,
-                  rotateX: -5,
-                  z: -200,
-                  y: 60,
+                  rotateY: 25,
+                  rotateX: -10,
+                  z: -300,
+                  y: 80,
                 }}
                 animate={{ 
-                  scale: 1 - position * 0.08,
-                  opacity: 1 - position * 0.3,
+                  scale: 1 - position * 0.1,
+                  opacity: 1 - position * 0.35,
                   zIndex: images.length - position,
-                  rotateY: position * -3,
-                  rotateX: position * 2,
-                  z: position * -50,
-                  y: position * 20,
-                  x: position * 15,
+                  rotateY: position * -5,
+                  rotateX: position * 3,
+                  z: position * -80,
+                  y: position * 25,
+                  x: position * 20,
+                  boxShadow: position === 0 
+                    ? '0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 60px -15px rgba(239, 108, 88, 0.3)' 
+                    : '0 10px 30px -10px rgba(0, 0, 0, 0.3)',
                 }}
                 exit={{ 
-                  scale: 1.05,
+                  scale: 1.15,
                   opacity: 0,
-                  rotateY: -20,
-                  rotateX: 5,
-                  z: 100,
-                  y: -40,
-                  x: -60,
+                  rotateY: -30,
+                  rotateX: 8,
+                  z: 150,
+                  y: -60,
+                  x: -80,
                 }}
                 transition={{
-                  duration: 0.9,
-                  ease: [0.25, 0.46, 0.45, 0.94],
+                  duration: 1,
+                  ease: [0.22, 1, 0.36, 1],
                 }}
                 style={{
                   transformStyle: 'preserve-3d',
