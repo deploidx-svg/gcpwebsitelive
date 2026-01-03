@@ -126,9 +126,14 @@ export default function HeroSection() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-[1.1] tracking-tight">
               <GlassText text="AI-Powered Websites." delay={0.2} charDelay={0.04} mode="word" />
               <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-red-400 to-primary">
-                <GlassText text="Delivered the Same Day." delay={0.6} charDelay={0.05} mode="word" />
-              </span>
+              <motion.span 
+                className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-red-400 to-primary inline-block"
+                initial={{ opacity: 0, filter: "blur(10px)" }}
+                animate={{ opacity: 1, filter: "blur(0px)" }}
+                transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
+              >
+                Delivered the Same Day.
+              </motion.span>
             </h1>
 
             <motion.div 
