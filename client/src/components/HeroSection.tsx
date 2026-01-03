@@ -81,11 +81,6 @@ function StackedImages() {
                     <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-primary/40" />
                     <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-primary/20" />
                   </div>
-                  <div className="flex-1 flex justify-center">
-                    <div className="bg-background rounded px-2 sm:px-3 py-0.5 text-[8px] sm:text-[10px] text-muted-foreground max-w-[120px] sm:max-w-[160px] truncate">
-                      growithcp.com
-                    </div>
-                  </div>
                 </div>
                 <div className="h-[calc(100%-1.5rem)] sm:h-[calc(100%-1.75rem)]">
                   <img
