@@ -42,21 +42,26 @@ export default function Navbar() {
             </Link>
 
             <div className="hidden md:flex items-center gap-1">
-              {navLinks.map((link) => (
-                <Link key={link.href} href={link.href}>
-                  <span
-                    className={cn(
-                      "px-4 py-2 rounded-md text-sm font-medium transition-colors cursor-pointer",
-                      location === link.href
-                        ? "text-primary bg-primary/10"
-                        : "text-muted-foreground hover:text-foreground hover:bg-white/5"
-                    )}
-                    data-testid={`link-nav-${link.label.toLowerCase()}`}
-                  >
-                    {link.label}
-                  </span>
-                </Link>
-              ))}
+              {navLinks.map((link) => {
+                const isHighlighted = link.label === "Home" || link.label === "Pricing";
+                return (
+                  <Link key={link.href} href={link.href}>
+                    <span
+                      className={cn(
+                        "px-4 py-2 rounded-md text-sm font-medium transition-all duration-300 cursor-pointer",
+                        location === link.href
+                          ? "text-primary bg-primary/10"
+                          : isHighlighted
+                            ? "text-foreground bg-white/[0.08] backdrop-blur-sm border border-white/[0.12] shadow-[0_0_15px_rgba(255,255,255,0.05)]"
+                            : "text-muted-foreground hover:text-foreground hover:bg-white/5"
+                      )}
+                      data-testid={`link-nav-${link.label.toLowerCase()}`}
+                    >
+                      {link.label}
+                    </span>
+                  </Link>
+                );
+              })}
             </div>
 
             <div className="hidden md:flex items-center gap-3">
