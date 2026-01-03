@@ -53,9 +53,9 @@ export default function Services() {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            <GlassText text="Our" delay={0.1} charDelay={0.05} mode="word" />{" "}
+            <GlassText text="Our" delay={0} charDelay={0.02} mode="word" />{" "}
             <span className="text-primary">
-              <GlassText text="Services" delay={0.3} charDelay={0.06} mode="word" />
+              <GlassText text="Services" delay={0.1} charDelay={0.02} mode="word" />
             </span>
           </h1>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">

@@ -30,13 +30,13 @@ export function GlassText({
   const itemVariants = {
     hidden: {
       opacity: 0,
-      filter: "blur(10px)",
+      filter: "blur(6px)",
     },
     visible: {
       opacity: 1,
       filter: "blur(0px)",
       transition: {
-        duration: 0.4,
+        duration: 0.2,
         ease: "easeOut",
       },
     },
