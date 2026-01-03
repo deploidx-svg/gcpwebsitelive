@@ -3,15 +3,15 @@ import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Link } from "wouter";
-import herHealingHubImage from "/herhealinghub_screenshot.png";
-import stack1Image from "/stack1.webp";
-import stack2Image from "/stack2.webp";
+import stack1Image from "/stack1.png";
+import stack2Image from "/stack2.png";
+import stack3Image from "/stack3.png";
 
 function StackedImages() {
   const images = [
-    { src: stack1Image, alt: "AI Chat Interface" },
-    { src: stack2Image, alt: "DeFi Platform" },
-    { src: herHealingHubImage, alt: "Her Healing Hub" },
+    { src: stack1Image, alt: "Green Rock - Environmental Platform" },
+    { src: stack2Image, alt: "Aviation Career Training" },
+    { src: stack3Image, alt: "HerCircle Care - Support Platform" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
