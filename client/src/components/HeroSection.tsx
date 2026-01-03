@@ -216,12 +216,22 @@ export default function HeroSection() {
           </div>
 
           <motion.div 
-            className="order-1 lg:order-2 flex justify-center lg:justify-end"
+            className="order-1 lg:order-2 flex flex-col items-center lg:items-end gap-6"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <StackedImages />
+            <Link href="/portfolio">
+              <Button 
+                variant="ghost" 
+                className="text-muted-foreground hover:text-foreground gap-2"
+                data-testid="button-visit-portfolio"
+              >
+                Visit Portfolio
+                <ArrowRight className="w-4 h-4" />
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </div>
