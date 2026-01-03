@@ -6,6 +6,7 @@ import { Link } from "wouter";
 import stack1Image from "/stack1.png";
 import stack2Image from "/stack2.png";
 import stack3Image from "/stack3.png";
+import aiLogoImage from "/ai-logo.png";
 
 function StackedImages() {
   const images = [
@@ -190,14 +191,22 @@ export default function HeroSection() {
               <Button
                 size="lg"
                 asChild
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg gap-2"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg gap-3"
               >
                 <a
                   href="https://clients.growithcp.live/order/product?pid=d5308768-251d-4859-d56c-747e390921e6"
                   target="_blank"
                   rel="noopener noreferrer"
                   data-testid="button-hero-cta-primary"
+                  className="flex items-center gap-3"
                 >
+                  <motion.img 
+                    src={aiLogoImage} 
+                    alt="AI" 
+                    className="w-6 h-6"
+                    animate={{ rotate: 360 }}
+                    transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+                  />
                   Talk to AI Website Consultant
                   <ArrowRight className="w-5 h-5" />
                 </a>
