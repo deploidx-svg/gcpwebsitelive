@@ -194,7 +194,7 @@ export default function HeroSection() {
                 className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg gap-3"
               >
                 <a
-                  href="https://clients.growithcp.live/order/product?pid=d5308768-251d-4859-d56c-747e390921e6"
+                  href="https://betaai.growithcp.live/"
                   target="_blank"
                   rel="noopener noreferrer"
                   data-testid="button-hero-cta-primary"
